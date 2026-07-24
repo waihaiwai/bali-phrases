@@ -1,0 +1,15 @@
+[
+  { "id": "flight", "icon": "✈️", "title": "機内", "desc": "JL35 / GA843 機内でのやり取り" },
+  { "id": "sin-transit", "icon": "🔁", "title": "SIN乗継", "desc": "チャンギT1→T3・復路9.5h乗継" },
+  { "id": "dps-arrival", "icon": "🛂", "title": "DPS入国", "desc": "e-VOA・Auto Gate・税関・観光税" },
+  { "id": "pickup", "icon": "🚐", "title": "送迎ピックアップ", "desc": "到着ホールでの看板探し・ドライバー" },
+  { "id": "hotel-checkin", "icon": "🏨", "title": "チェックイン", "desc": "予約提示・ベッド・アーリーチェックイン" },
+  { "id": "concierge", "icon": "🛎️", "title": "コンシェルジュ", "desc": "レストラン予約・ツアー・Grab手配" },
+  { "id": "restaurant", "icon": "🍽️", "title": "レストラン", "desc": "入店・注文・会計" },
+  { "id": "grab", "icon": "🚗", "title": "Grab・チャーター", "desc": "ドライバー確認・待機・料金交渉" },
+  { "id": "spa", "icon": "💆", "title": "スパ", "desc": "予約・施術の強さの希望" },
+  { "id": "tour", "icon": "⛰️", "title": "ツアー・トレッキング", "desc": "集合時間・ペース・写真" },
+  { "id": "shopping", "icon": "🛍️", "title": "買い物・両替", "desc": "価格交渉・カード可否・両替" },
+  { "id": "trouble", "icon": "🆘", "title": "トラブル", "desc": "体調不良・紛失・請求ミス" },
+  { "id": "checkout", "icon": "🧳", "title": "チェックアウト・復路", "desc": "レイトチェックアウト・荷物・空港へ" }
+]

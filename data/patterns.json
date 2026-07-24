@@ -1,0 +1,62 @@
+{
+  "could-i-get": {
+    "title": "Could I get 〜?",
+    "desc": "依頼の万能形。物・サービスを丁寧にもらう。get の代わりに have でも同じ。末尾に please を付ければ十分丁寧。",
+    "examples": ["Could I get some water, please?", "Could I get the bill, please?"]
+  },
+  "could-you": {
+    "title": "Could you 〜?",
+    "desc": "相手に動いてもらう依頼の万能形。命令形（Wait here）より常に丁寧で、頼み事はほぼ全部この形で通せる。",
+    "examples": ["Could you wait here for about ten minutes?", "Could you take a photo of us?"]
+  },
+  "id-like-to": {
+    "title": "I'd like to 〜",
+    "desc": "丁寧な意思表明。I want to より柔らかく、予約・手配・要望を切り出す時の大人の定番。",
+    "examples": ["I'd like to book a massage for two.", "I'd like to change yen into rupiah."]
+  },
+  "is-it-possible": {
+    "title": "Is it possible to 〜?",
+    "desc": "無理めなお願いの打診。ダメ元の交渉はこれ。「可能かどうか」を聞く形なので断られても角が立たない。",
+    "examples": ["Is it possible to check in early?", "Is it possible to have a late checkout?"]
+  },
+  "reservation-under": {
+    "title": "〜 under + 名字",
+    "desc": "予約・手配を名前で提示する形。under Tanaka で「タナカ名義」。ホテル・レストラン・送迎、予約の提示は全部この形。",
+    "examples": ["We have a reservation under Tanaka.", "We have a pickup arranged under Tanaka."]
+  },
+  "past-request": {
+    "title": "We requested 〜",
+    "desc": "過去形で「事前に頼んであった」と事実を提示する形。記録ベースの言い方なので要求がましくならない。",
+    "examples": ["We requested a room with two queen beds."]
+  },
+  "would-it-be-okay": {
+    "title": "Would it be okay if 〜?",
+    "desc": "丁寧な許可取り。if 節の中は過去形にするのがポイント。軽く言うなら Could we 〜? でも同じ役割。",
+    "examples": ["Would it be okay if we left our luggage here?", "Could we take a short break?"]
+  },
+  "do-you-have": {
+    "title": "Do you have 〜?",
+    "desc": "有無の確認。空き・在庫・メニュー、何でもまず have で聞ける。Do you take 〜?（受け付けてる?）も同じ仲間。",
+    "examples": ["Do you have a table for two?", "Do you take credit cards?"]
+  },
+  "where-can-i": {
+    "title": "Where can I 〜?",
+    "desc": "場所・手段を聞く形。find / pay / buy を入れ替えて応用。探し物なら I'm looking for 〜 も同じ発想。",
+    "examples": ["Where can I pay the tourist levy?", "I'm looking for the driver from The Ritz-Carlton."]
+  },
+  "there-seems": {
+    "title": "I think there's 〜 / I think I 〜",
+    "desc": "問題の丁寧な指摘。You made a mistake と人を責めず、I think でクッションを入れて問題そのものを主語にする。",
+    "examples": ["I think there's a mistake in the bill.", "I think I left my phone in the taxi."]
+  },
+  "already-done": {
+    "title": "I've already 〜",
+    "desc": "完了済みの提示。「もう済ませてあります」を一言で。入国手続き・支払い済みの主張に強い。",
+    "examples": ["I've already applied for the e-VOA.", "I've already paid it online."]
+  },
+  "wh-question": {
+    "title": "How much / How long / What time 〜?",
+    "desc": "疑問詞の定型3兄弟。値段は How much is 〜?、所要時間は How long does it take to 〜?、時刻は What time should we 〜?",
+    "examples": ["How much is this?", "How long does it take to the hotel?", "What time should we be in the lobby?"]
+  }
+}

@@ -1,0 +1,452 @@
+[
+  {
+    "id": "flight-01",
+    "scene": "flight",
+    "ja": "（機内で）お水をもらえますか",
+    "best": "Could I get some water, please?",
+    "structure": "Could I get + 名詞 — 「もらえますか」の万能形。機内・レストラン・ホテル全部これでいける",
+    "nuance": "Water, please. でも通じるが、Could I get 〜? が口から出ると全シーンで使い回せる",
+    "pattern": "could-i-get"
+  },
+  {
+    "id": "flight-02",
+    "scene": "flight",
+    "ja": "（食事サービスで）チキンでお願いします",
+    "best": "I'll have the chicken, please.",
+    "structure": "I'll have + 選ぶ物 — 提示された選択肢から選ぶときの定番。レストランの注文にもそのまま使える",
+    "nuance": "Chicken. だけだとぶっきらぼう。I'll have 〜 で「選びました」と丁寧に伝わる",
+    "pattern": ""
+  },
+  {
+    "id": "flight-03",
+    "scene": "flight",
+    "ja": "（席を立ちたい）すみません、ちょっと通してもらえますか",
+    "best": "Excuse me, could I get through?",
+    "structure": "Excuse me + Could I 〜? — 声かけ＋依頼のセット。get through で「通り抜ける」",
+    "nuance": "Excuse me. だけで立っても伝わるが、一言添えるとスマート",
+    "pattern": "could-i-get"
+  },
+  {
+    "id": "sin-01",
+    "scene": "sin-transit",
+    "ja": "（T1到着、T3へ移動）ターミナル3行きのスカイトレインはどこですか",
+    "best": "Where can I find the Skytrain to Terminal 3?",
+    "structure": "Where can I find + 探し物 — 場所を聞く万能形。find を take に替えれば乗り物にも使える",
+    "nuance": "Where is 〜? でもOK。can I find は「どう行けばいい?」のニュアンスが乗る",
+    "pattern": "where-can-i"
+  },
+  {
+    "id": "sin-02",
+    "scene": "sin-transit",
+    "ja": "（ゲート前で）これはデンパサール行きGA843のゲートで合ってますか",
+    "best": "Is this the gate for GA843 to Denpasar?",
+    "structure": "Is this the 〜 for ...? — 目の前の物が目的の物か確かめる形。指差し確認の定番",
+    "nuance": "不安なら搭乗券を見せながら聞けば確実。乗継3h25mなので焦らなくて大丈夫",
+    "pattern": ""
+  },
+  {
+    "id": "sin-03",
+    "scene": "sin-transit",
+    "ja": "乗り継ぎで、もう一度保安検査を受ける必要がありますか",
+    "best": "Do I need to go through security again?",
+    "structure": "Do I need to 〜? — 「〜する必要ありますか」。手続きの要否確認はこの形",
+    "nuance": "チャンギはゲート前検査方式。係員に聞けばすぐ教えてくれる",
+    "pattern": ""
+  },
+  {
+    "id": "sin-04",
+    "scene": "sin-transit",
+    "ja": "（復路9.5h乗継）この乗継時間で、一度空港の外に出られますか",
+    "best": "Is it possible to leave the airport during my layover?",
+    "structure": "Is it possible to 〜? — できるかどうかの打診。layover =乗継時間",
+    "nuance": "ラウンジやトランジットホテルを探すなら Where can I find 〜? で応用",
+    "pattern": "is-it-possible"
+  },
+  {
+    "id": "dps-01",
+    "scene": "dps-arrival",
+    "ja": "（入国審査で）e-VOAはもう申請済みです",
+    "best": "I've already applied for the e-VOA.",
+    "structure": "I've already + 過去分詞 — 「もう済ませてあります」。手続き系で強力な一言",
+    "nuance": "e-VOA事前申請済みならAuto Gateで会話なしの想定。有人レーンに回された時用",
+    "pattern": "already-done"
+  },
+  {
+    "id": "dps-02",
+    "scene": "dps-arrival",
+    "ja": "（入国審査で）ヌサドゥアのリッツ・カールトンに5泊します",
+    "best": "We're staying at The Ritz-Carlton in Nusa Dua for five nights.",
+    "structure": "We're staying at + 場所 + for + 期間 — 現在進行形で確定した予定を表す定番形",
+    "nuance": "定番質問 Where are you staying? への回答。ホテル名と泊数は淀みなく言えるように",
+    "pattern": ""
+  },
+  {
+    "id": "dps-03",
+    "scene": "dps-arrival",
+    "ja": "観光税はどこで払えますか",
+    "best": "Where can I pay the tourist levy?",
+    "structure": "Where can I + 動詞 — 「どこで〜できますか」。pay / buy / find を入れ替えて応用",
+    "nuance": "Love Baliで事前納付済みなら I've already paid it online. でOK",
+    "pattern": "where-can-i"
+  },
+  {
+    "id": "dps-04",
+    "scene": "dps-arrival",
+    "ja": "（税関で）申告するものはありません",
+    "best": "Nothing to declare.",
+    "structure": "Nothing to + 動詞 — 「〜するものはない」の省略定型。フルで言うなら I have nothing to declare.",
+    "nuance": "税関申告はAll Indonesiaで電子提出済みの想定。QRを見せれば会話はほぼ不要",
+    "pattern": ""
+  },
+  {
+    "id": "pickup-01",
+    "scene": "pickup",
+    "ja": "（到着ホールで）リッツ・カールトンの送迎ドライバーを探しています",
+    "best": "I'm looking for the driver from The Ritz-Carlton.",
+    "structure": "I'm looking for + 探し物 — 「探しています」。人にも物にも使える",
+    "nuance": "看板は「The Ritz-Carlton, Bali」表記で名前は出ない。見つからなければ空港代表者へ電話",
+    "pattern": "where-can-i"
+  },
+  {
+    "id": "pickup-02",
+    "scene": "pickup",
+    "ja": "タナカ名義で送迎をお願いしてあります",
+    "best": "We have a pickup arranged under Tanaka.",
+    "structure": "under + 名字 — 「〜名義で」。予約・手配の提示は全部この形",
+    "nuance": "We have a reservation under 〜 と同型。チェックイン・レストランでも再登場する",
+    "pattern": "reservation-under"
+  },
+  {
+    "id": "pickup-03",
+    "scene": "pickup",
+    "ja": "（車内で）ホテルまではどのくらいかかりますか",
+    "best": "How long does it take to the hotel?",
+    "structure": "How long does it take to + 場所 — 所要時間を聞く定型。take が「時間がかかる」",
+    "nuance": "空港→ホテルは30〜45分。ドライバーとのスモールトークの入り口にも",
+    "pattern": "wh-question"
+  },
+  {
+    "id": "checkin-01",
+    "scene": "hotel-checkin",
+    "ja": "タナカ名義で予約しています",
+    "best": "We have a reservation under Tanaka.",
+    "structure": "We have a reservation under + 名字 — チェックインの第一声はこれで完結",
+    "nuance": "名前は例なので自分の名字に置き換えて練習。確認番号を求められたら Here's the confirmation number. と画面を見せれば十分",
+    "pattern": "reservation-under"
+  },
+  {
+    "id": "checkin-02",
+    "scene": "hotel-checkin",
+    "ja": "クイーンベッド2台の部屋をリクエストしていたのですが",
+    "best": "We requested a room with two queen beds.",
+    "structure": "We requested + 名詞句 — 過去形で「事前に頼んであった」を伝える万能形",
+    "nuance": "I want... は直接的すぎ。requested なら記録ベースで角が立たない",
+    "pattern": "past-request"
+  },
+  {
+    "id": "checkin-03",
+    "scene": "hotel-checkin",
+    "ja": "（14時台に到着）アーリーチェックインはできますか",
+    "best": "Is it possible to check in early?",
+    "structure": "Is it possible to 〜? — ダメ元のお願いはこの形。断られても感じが悪くならない",
+    "nuance": "部屋が未準備でも荷物を預けてプール・スパ・ジムが使える（ホテル回答済み）",
+    "pattern": "is-it-possible"
+  },
+  {
+    "id": "checkin-04",
+    "scene": "hotel-checkin",
+    "ja": "部屋の準備ができるまで荷物を預かってもらえますか",
+    "best": "Would it be okay if we left our luggage here until the room is ready?",
+    "structure": "Would it be okay if + 過去形 — 丁寧な許可取り。if 節を過去形にするのがポイント",
+    "nuance": "軽く言うなら Could we leave our luggage here? で同じ役割",
+    "pattern": "would-it-be-okay"
+  },
+  {
+    "id": "checkin-05",
+    "scene": "hotel-checkin",
+    "ja": "実は結婚記念日のお祝いの旅行なんです",
+    "best": "We're celebrating our wedding anniversary.",
+    "structure": "We're celebrating + お祝い事 — 記念日・誕生日を伝える定番。honeymoon にも応用可",
+    "nuance": "ホテルには伝達済み。会話で触れられたらさらっと返せるように",
+    "pattern": ""
+  },
+  {
+    "id": "concierge-01",
+    "scene": "concierge",
+    "ja": "明日の夜、レストランを予約してもらえますか",
+    "best": "Could you book a restaurant for us for tomorrow night?",
+    "structure": "Could you + 動詞 + for us — 相手に動いてもらう依頼。for us で「私たちのために」",
+    "nuance": "希望を添えるなら Somewhere with a nice view. のように一言足す",
+    "pattern": "could-you"
+  },
+  {
+    "id": "concierge-02",
+    "scene": "concierge",
+    "ja": "ウブド方面に日帰りしたいので、貸切ドライバーを手配したいです",
+    "best": "I'd like to arrange a private driver for a day trip to Ubud.",
+    "structure": "I'd like to arrange + 手配物 — 手配依頼の切り出し。arrange が「段取りする」",
+    "nuance": "スミニャック日帰りにも同じ形。a day trip to Seminyak に置き換えるだけ",
+    "pattern": "id-like-to"
+  },
+  {
+    "id": "concierge-03",
+    "scene": "concierge",
+    "ja": "スミニャックまでGrabを呼んでもらえますか",
+    "best": "Could you get us a Grab to Seminyak?",
+    "structure": "Could you get us + 乗り物 — get us a taxi / a Grab で「呼んでもらう」",
+    "nuance": "リッツ周辺はGrabの捕まりが悪いことがある。ホテル経由が確実",
+    "pattern": "could-you"
+  },
+  {
+    "id": "concierge-04",
+    "scene": "concierge",
+    "ja": "ライステラスに行くツアーはありますか",
+    "best": "Do you have any tours to the rice terraces?",
+    "structure": "Do you have any + 名詞 — 有無の確認。any を付けると「何かしらある?」と幅が出る",
+    "nuance": "火山トレッキングなら any sunrise treks to Mount Batur に置き換え",
+    "pattern": "do-you-have"
+  },
+  {
+    "id": "rest-01",
+    "scene": "restaurant",
+    "ja": "（予約なしで入店）2人ですが、席はありますか",
+    "best": "Do you have a table for two?",
+    "structure": "Do you have a table for + 人数 — 入店の第一声。予約ありなら under Tanaka を続ける",
+    "nuance": "A table for two, please. でも同じ。for two だけ言えれば最悪伝わる",
+    "pattern": "do-you-have"
+  },
+  {
+    "id": "rest-02",
+    "scene": "restaurant",
+    "ja": "あまり辛くしないでもらえますか",
+    "best": "Could you make it not too spicy?",
+    "structure": "Could you make it + 状態 — 料理の仕上がりを頼む形。make it mild でも同じ",
+    "nuance": "バリ料理はサンバルが辛いことがある。注文時に言うのが確実",
+    "pattern": "could-you"
+  },
+  {
+    "id": "rest-03",
+    "scene": "restaurant",
+    "ja": "ナシゴレンを1つと、ミーゴレンを1つお願いします",
+    "best": "We'll have one nasi goreng and one mie goreng, please.",
+    "structure": "We'll have + 数 + 料理名 — 複数人の注文はWe'llでまとめる。and でつなぐだけ",
+    "nuance": "指差しながら This one and this one, please. でも十分通じる",
+    "pattern": ""
+  },
+  {
+    "id": "rest-04",
+    "scene": "restaurant",
+    "ja": "お会計をお願いします",
+    "best": "Could I get the bill, please?",
+    "structure": "Could I get + the bill — 会計依頼の定番。bill はイギリス系、check は米系どちらも通じる",
+    "nuance": "遠くの店員にはジェスチャー（宙にサインを書く仕草）＋ The bill, please. でOK",
+    "pattern": "could-i-get"
+  },
+  {
+    "id": "grab-01",
+    "scene": "grab",
+    "ja": "（配車確認）タロウの配車で来たドライバーさんですか",
+    "best": "Hi, are you here for Taro?",
+    "structure": "Are you here for + 名前 — 迎えに来た相手の確認。送迎・配車全般で使える",
+    "nuance": "Grabはアプリのナンバープレート照合が確実。声かけはこの一言で十分",
+    "pattern": ""
+  },
+  {
+    "id": "grab-02",
+    "scene": "grab",
+    "ja": "ここで10分ほど待っててもらえますか",
+    "best": "Could you wait here for about ten minutes?",
+    "structure": "Could you wait here for + 時間 — about を付けると「〜くらい」と柔らかくなる",
+    "nuance": "観光の途中下車で便利。チャーターなら Take your time. と返されるはず",
+    "pattern": "could-you"
+  },
+  {
+    "id": "grab-03",
+    "scene": "grab",
+    "ja": "16時にここへ迎えに来てもらえますか",
+    "best": "Could you pick us up here at four?",
+    "structure": "Could you pick us up + 場所 + at + 時刻 — pick up が「迎えに行く」。時刻は at",
+    "nuance": "4 p.m. と言えばより確実。指で4を出しながらでもOK",
+    "pattern": "could-you"
+  },
+  {
+    "id": "grab-04",
+    "scene": "grab",
+    "ja": "（チャーター交渉）1日貸切だといくらですか",
+    "best": "How much for a full day?",
+    "structure": "How much for + 対象 — 値段を聞く省略形。is it を省いてこれだけで自然",
+    "nuance": "半日なら for half a day。金額はアプリの相場と見比べて判断",
+    "pattern": "wh-question"
+  },
+  {
+    "id": "spa-01",
+    "scene": "spa",
+    "ja": "今日の16時に2人分のマッサージを予約したいです",
+    "best": "I'd like to book a massage for two at four today.",
+    "structure": "I'd like to book + 内容 + for + 人数 + at + 時刻 — 予約の要素を順に並べるだけ",
+    "nuance": "リッツのスパはジャグジー・サウナ付き。部屋付け精算なら Charge it to the room, please.",
+    "pattern": "id-like-to"
+  },
+  {
+    "id": "spa-02",
+    "scene": "spa",
+    "ja": "今日の午後、空きはありますか",
+    "best": "Do you have any openings this afternoon?",
+    "structure": "Do you have any openings + 時間帯 — opening =予約の空き枠。レストランにも使える",
+    "nuance": "availability を使って Do you have availability 〜? でも同じ",
+    "pattern": "do-you-have"
+  },
+  {
+    "id": "spa-03",
+    "scene": "spa",
+    "ja": "（施術中）もう少し弱めでお願いします",
+    "best": "Could you go a little softer, please?",
+    "structure": "Could you go + 比較級 — 強さ・速さの調整依頼。a little で「もう少し」",
+    "nuance": "強めなら a bit stronger。ちょうど良ければ That's perfect. と伝えると施術者も安心",
+    "pattern": "could-you"
+  },
+  {
+    "id": "tour-01",
+    "scene": "tour",
+    "ja": "明日は何時にロビーに集合すればいいですか",
+    "best": "What time should we be in the lobby?",
+    "structure": "What time should we + 動詞 — 集合・出発時刻の確認。should で「〜すればいい?」",
+    "nuance": "答えを聞いたら Seven, right? と復唱すると聞き間違いを防げる",
+    "pattern": "wh-question"
+  },
+  {
+    "id": "tour-02",
+    "scene": "tour",
+    "ja": "（トレッキング中）ちょっと休憩してもいいですか",
+    "best": "Could we take a short break?",
+    "structure": "Could we take a break — 自分たちの行動の許可取り。short を付けて「少しだけ」",
+    "nuance": "ペースが速いなら Could we slow down a bit? も同じ形で使える",
+    "pattern": "would-it-be-okay"
+  },
+  {
+    "id": "tour-03",
+    "scene": "tour",
+    "ja": "私たちの写真を撮ってもらえますか",
+    "best": "Could you take a photo of us?",
+    "structure": "Could you take a photo of + 対象 — 写真依頼の定番。of us で「私たちの」",
+    "nuance": "スマホを渡しながら言えば確実。縦で撮ってほしければ Vertical, please.",
+    "pattern": "could-you"
+  },
+  {
+    "id": "shop-01",
+    "scene": "shopping",
+    "ja": "これはいくらですか",
+    "best": "How much is this?",
+    "structure": "How much is + 対象 — 値段確認の最短形。複数なら How much are these?",
+    "nuance": "ルピアは桁が大きい。数字はスマホの電卓に打ってもらうのが確実",
+    "pattern": "wh-question"
+  },
+  {
+    "id": "shop-02",
+    "scene": "shopping",
+    "ja": "（値段交渉）10万ルピアになりませんか",
+    "best": "Could you do one hundred thousand?",
+    "structure": "Could you do + 金額 — 値切りの定番。do が「その値段にする」の意味になる",
+    "nuance": "市場では交渉が前提。笑顔で、ダメなら Okay, thank you! と引けば良い関係のまま",
+    "pattern": "could-you"
+  },
+  {
+    "id": "shop-03",
+    "scene": "shopping",
+    "ja": "クレジットカードは使えますか",
+    "best": "Do you take credit cards?",
+    "structure": "Do you take + 支払い手段 — take =「受け付ける」。Do you take JCB? などにも応用",
+    "nuance": "ローカル店や市場は現金のみが多い。小額のIDR現金を常に持っておく",
+    "pattern": "do-you-have"
+  },
+  {
+    "id": "shop-04",
+    "scene": "shopping",
+    "ja": "円をルピアに両替したいです",
+    "best": "I'd like to change yen into rupiah.",
+    "structure": "I'd like to change A into B — 両替の定型。change + 通貨 + into + 通貨",
+    "nuance": "レートを先に聞くなら What's the rate for yen? 認可両替商（緑の看板）を選ぶ",
+    "pattern": "id-like-to"
+  },
+  {
+    "id": "trouble-01",
+    "scene": "trouble",
+    "ja": "妻の体調が良くないです",
+    "best": "My wife isn't feeling well.",
+    "structure": "主語 + isn't feeling well — 体調不良の定番表現。I'm not feeling well. で自分にも",
+    "nuance": "症状を足すなら She has a stomachache.（腹痛）/ a fever（熱）",
+    "pattern": ""
+  },
+  {
+    "id": "trouble-02",
+    "scene": "trouble",
+    "ja": "医者に診てもらいたいです。近くにクリニックはありますか",
+    "best": "I'd like to see a doctor. Is there a clinic nearby?",
+    "structure": "I'd like to see a doctor + Is there 〜 nearby? — 要望＋場所確認の2文セット",
+    "nuance": "ヌサドゥアならBIMC Hospital。受診前に保険サポートラインへ連絡（キャッシュレス提携）",
+    "pattern": "id-like-to"
+  },
+  {
+    "id": "trouble-03",
+    "scene": "trouble",
+    "ja": "海外旅行保険に入っています。先に保険会社に電話してもいいですか",
+    "best": "We have travel insurance. Could I call them first?",
+    "structure": "We have travel insurance — まず保険の存在を宣言。そのうえで Could I 〜? で許可取り",
+    "nuance": "契約証番号と現地サポートの電話番号はスマホに控えておく。事故は30日以内連絡・領収書必須",
+    "pattern": "could-i-get"
+  },
+  {
+    "id": "trouble-04",
+    "scene": "trouble",
+    "ja": "タクシーに携帯を忘れたみたいです",
+    "best": "I think I left my phone in the taxi.",
+    "structure": "I think I left + 物 + in + 場所 — 紛失報告の定型。leave の過去形 left で「置き忘れた」",
+    "nuance": "I think を頭に付けると断定を避けられる。Grabならアプリからドライバーに連絡可能",
+    "pattern": "there-seems"
+  },
+  {
+    "id": "trouble-05",
+    "scene": "trouble",
+    "ja": "請求書に間違いがあるようです",
+    "best": "I think there's a mistake in the bill.",
+    "structure": "I think there's a mistake in + 対象 — 人ではなく問題を主語にする丁寧な指摘",
+    "nuance": "You made a mistake. は責め口調。I think there's 〜 なら相手も直しやすい",
+    "pattern": "there-seems"
+  },
+  {
+    "id": "checkout-01",
+    "scene": "checkout",
+    "ja": "（復路13:40発）レイトチェックアウトはできますか",
+    "best": "Is it possible to have a late checkout? Our flight is at one forty.",
+    "structure": "Is it possible to 〜? + 理由 — 打診に理由を1文添えると通りやすい",
+    "nuance": "チェックアウトは12:00。フライトはDPS 13:40発なので実質不要だが交渉の練習に最適",
+    "pattern": "is-it-possible"
+  },
+  {
+    "id": "checkout-02",
+    "scene": "checkout",
+    "ja": "チェックアウト後、荷物を預かってもらえますか",
+    "best": "Could we leave our bags here after checkout?",
+    "structure": "Could we leave + 物 + here — 預かり依頼の定番。after checkout で期間を明示",
+    "nuance": "チェックイン時の until the room is ready と対になる表現。同じ形の再利用",
+    "pattern": "would-it-be-okay"
+  },
+  {
+    "id": "checkout-03",
+    "scene": "checkout",
+    "ja": "正午に空港までのタクシーを手配してもらえますか",
+    "best": "Could you arrange a taxi to the airport for noon?",
+    "structure": "Could you arrange + 乗り物 + for + 時刻 — 手配依頼。for noon で「正午に合わせて」",
+    "nuance": "復路はGrab予定。Could you get us a Grab? でも同じ。余裕を持って11時台推奨",
+    "pattern": "could-you"
+  },
+  {
+    "id": "checkout-04",
+    "scene": "checkout",
+    "ja": "チェックアウトをお願いします",
+    "best": "We'd like to check out, please.",
+    "structure": "We'd like to + 動詞 — 丁寧な意思表明。手続きの開始宣言はこの形",
+    "nuance": "部屋番号を聞かれたら Room + 番号。精算明細の確認は trouble-05 の形が使える",
+    "pattern": "id-like-to"
+  }
+]
