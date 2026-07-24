@@ -99,6 +99,21 @@ main { padding: 0 14px 20px; max-width: 640px; margin: 0 auto; }
   margin: 8px 0;
 }
 .card .ja { font-size: 0.82rem; color: var(--muted); margin-bottom: 6px; }
+.cue {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  background: #fdf3e3;
+  border-left: 3px solid #d99a1b;
+  border-radius: 8px;
+  padding: 8px 11px;
+  margin-bottom: 10px;
+}
+.cue .cue-en { display: block; font-size: 0.92rem; font-weight: 700; color: #8a6414; }
+.cue .cue-ja { display: block; font-size: 0.7rem; color: var(--muted); margin-top: 2px; }
 .card .best-row { display: flex; align-items: flex-start; gap: 8px; }
 .card .best { font-size: 1.02rem; font-weight: 700; line-height: 1.45; flex: 1; }
 .speak-btn {

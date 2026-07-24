@@ -109,6 +109,7 @@
     const p = state.patterns[c.pattern];
     const node = el(`
       <article class="card" id="card-${c.id}">
+        ${c.cue ? `<button class="cue"><span class="cue-en">“${esc(c.cue.en)}”</span><span class="cue-ja">${esc(c.cue.ja)}</span></button>` : ""}
         <div class="ja">${esc(c.ja)}</div>
         <div class="best-row">
           <div class="best">${esc(c.best)}</div>
@@ -122,6 +123,8 @@
         ${p ? `<button class="pattern-chip">${esc(p.title)}</button>` : ""}
       </article>`);
     node.querySelector(".speak-btn").addEventListener("click", () => speak(c.best));
+    const cueBtn = node.querySelector(".cue");
+    if (cueBtn) cueBtn.addEventListener("click", () => speak(c.cue.en));
     const chip = node.querySelector(".pattern-chip");
     if (chip) chip.addEventListener("click", () => showPatterns(c.pattern));
     return node;
@@ -185,8 +188,9 @@
             <span>${scene ? scene.icon + " " + esc(scene.title) : ""}</span>
             <span>${p.index + 1} / ${p.queue.length}</span>
           </div>
+          ${c.cue ? `<button class="cue"><span class="cue-en">“${esc(c.cue.en)}”</span><span class="cue-ja">${esc(c.cue.ja)}</span></button>` : ""}
           <div class="prompt">${esc(c.ja)}</div>
-          <div class="hint">まず声に出して言ってみよう</div>
+          <div class="hint">${c.cue ? "相手にこう言われた。すぐ声に出して返そう" : "まず声に出して言ってみよう"}</div>
           <div class="answer" hidden>
             <div class="best-row">
               <div class="best">${esc(c.best)}</div>
@@ -208,6 +212,9 @@
     const answer = node.querySelector(".answer");
     const revealBtn = node.querySelector(".big-btn");
     const rateRow = node.querySelector(".rate-row");
+    const cueBtn = node.querySelector(".cue");
+    if (cueBtn) cueBtn.addEventListener("click", () => speak(c.cue.en));
+    if (c.cue) speak(c.cue.en); // 相手のセリフを自動再生 — 本番と同じく耳から始める
     revealBtn.addEventListener("click", () => {
       answer.hidden = false;
       revealBtn.hidden = true;

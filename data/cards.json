@@ -11,7 +11,8 @@
   {
     "id": "flight-02",
     "scene": "flight",
-    "ja": "（食事サービスで）チキンでお願いします",
+    "cue": { "en": "Chicken or beef?", "ja": "チキンとビーフ、どちらになさいますか？" },
+    "ja": "チキンでお願いします",
     "best": "I'll have the chicken, please.",
     "structure": "I'll have + 選ぶ物 — 提示された選択肢から選ぶときの定番。レストランの注文にもそのまま使える",
     "nuance": "Chicken. だけだとぶっきらぼう。I'll have 〜 で「選びました」と丁寧に伝わる",
@@ -74,7 +75,8 @@
   {
     "id": "dps-02",
     "scene": "dps-arrival",
-    "ja": "（入国審査で）ヌサドゥアのリッツ・カールトンに5泊します",
+    "cue": { "en": "Where are you staying?", "ja": "どこに滞在しますか？" },
+    "ja": "ヌサドゥアのリッツ・カールトンに5泊します",
     "best": "We're staying at The Ritz-Carlton in Nusa Dua for five nights.",
     "structure": "We're staying at + 場所 + for + 期間 — 現在進行形で確定した予定を表す定番形",
     "nuance": "定番質問 Where are you staying? への回答。ホテル名と泊数は淀みなく言えるように",
@@ -128,7 +130,8 @@
   {
     "id": "checkin-01",
     "scene": "hotel-checkin",
-    "ja": "タナカ名義で予約しています",
+    "cue": { "en": "Good afternoon. Are you checking in?", "ja": "こんにちは。チェックインですか？" },
+    "ja": "はい。タナカ名義で予約しています",
     "best": "We have a reservation under Tanaka.",
     "structure": "We have a reservation under + 名字 — チェックインの第一声はこれで完結",
     "nuance": "名前は例なので自分の名字に置き換えて練習。確認番号を求められたら Here's the confirmation number. と画面を見せれば十分",
@@ -209,6 +212,7 @@
   {
     "id": "rest-01",
     "scene": "restaurant",
+    "cue": { "en": "Good evening. How many?", "ja": "こんばんは。何名様ですか？" },
     "ja": "（予約なしで入店）2人ですが、席はありますか",
     "best": "Do you have a table for two?",
     "structure": "Do you have a table for + 人数 — 入店の第一声。予約ありなら under Tanaka を続ける",
@@ -299,7 +303,8 @@
   {
     "id": "spa-03",
     "scene": "spa",
-    "ja": "（施術中）もう少し弱めでお願いします",
+    "cue": { "en": "How's the pressure?", "ja": "強さはいかがですか？" },
+    "ja": "もう少し弱めでお願いします",
     "best": "Could you go a little softer, please?",
     "structure": "Could you go + 比較級 — 強さ・速さの調整依頼。a little で「もう少し」",
     "nuance": "強めなら a bit stronger。ちょうど良ければ That's perfect. と伝えると施術者も安心",
@@ -448,5 +453,115 @@
     "structure": "We'd like to + 動詞 — 丁寧な意思表明。手続きの開始宣言はこの形",
     "nuance": "部屋番号を聞かれたら Room + 番号。精算明細の確認は trouble-05 の形が使える",
     "pattern": "id-like-to"
+  },
+  {
+    "id": "dps-05",
+    "scene": "dps-arrival",
+    "cue": { "en": "What's the purpose of your visit?", "ja": "渡航の目的は何ですか？" },
+    "ja": "観光で来ました",
+    "best": "We're here on vacation.",
+    "structure": "We're here on/for + 目的 — 目的を答える定番。on vacation / for sightseeing",
+    "nuance": "入国審査の最頻出質問。Vacation. の一語でも通じるが、文で言えると落ち着いて見える",
+    "pattern": ""
+  },
+  {
+    "id": "dps-06",
+    "scene": "dps-arrival",
+    "cue": { "en": "How long are you staying?", "ja": "どのくらい滞在しますか？" },
+    "ja": "5泊です",
+    "best": "Five nights.",
+    "structure": "数 + nights — 期間の質問は名詞だけの短答でOK。無理に文にしなくていい",
+    "nuance": "days ではなく nights で答えるとホテル滞在と揃って明確。Five nights, until the 14th. と足しても良い",
+    "pattern": ""
+  },
+  {
+    "id": "checkin-06",
+    "scene": "hotel-checkin",
+    "cue": { "en": "May I see your passport, please?", "ja": "パスポートを拝見できますか？" },
+    "ja": "はい、どうぞ",
+    "best": "Sure, here you go.",
+    "structure": "Here you go — 物を手渡すときの万能フレーズ。Sure を頭に付けて快諾の響きに",
+    "nuance": "Here it is. でも同じ。チェックイン・両替・買い物、手渡す場面すべてで使う",
+    "pattern": ""
+  },
+  {
+    "id": "concierge-05",
+    "scene": "concierge",
+    "cue": { "en": "What time would you like?", "ja": "何時がよろしいですか？" },
+    "ja": "できれば19時でお願いします",
+    "best": "Seven o'clock, if possible.",
+    "structure": "時刻 + if possible — 希望を伝えつつ相手の都合に譲る形。予約交渉の定番",
+    "nuance": "満席なら What times do you have? と聞き返せば選択肢をくれる",
+    "pattern": ""
+  },
+  {
+    "id": "rest-05",
+    "scene": "restaurant",
+    "cue": { "en": "Anything to drink?", "ja": "お飲み物はいかがですか？" },
+    "ja": "ビンタンを2つお願いします",
+    "best": "Two Bintangs, please.",
+    "structure": "数 + 品名 + please — 注文の最短形。飲み物はこれで十分",
+    "nuance": "Bintang はバリの定番ビール。水なら Just water, please.（just で「とりあえず水だけ」感）",
+    "pattern": ""
+  },
+  {
+    "id": "rest-06",
+    "scene": "restaurant",
+    "cue": { "en": "How is everything?", "ja": "お料理はいかがですか？" },
+    "ja": "とても美味しいです",
+    "best": "Everything's great, thank you.",
+    "structure": "Everything's + 形容詞 — 食事中の様子伺いへの定番返し。thank you で締める",
+    "nuance": "深い意味のない挨拶的質問。Great, thanks! だけでも十分",
+    "pattern": ""
+  },
+  {
+    "id": "rest-07",
+    "scene": "restaurant",
+    "cue": { "en": "Cash or card?", "ja": "お支払いは現金とカード、どちらですか？" },
+    "ja": "カードでお願いします",
+    "best": "Card, please.",
+    "structure": "選択肢 + please — 二択質問はどちらかを言って please。それだけで完結",
+    "nuance": "タッチ決済なら端末にかざすだけ。By card, please. とフルで言ってもOK",
+    "pattern": ""
+  },
+  {
+    "id": "grab-05",
+    "scene": "grab",
+    "cue": { "en": "Where to?", "ja": "どちらまで行きますか？" },
+    "ja": "ヌサドゥアのリッツ・カールトンまでお願いします",
+    "best": "To the Ritz-Carlton in Nusa Dua, please.",
+    "structure": "To + 目的地 + please — 行き先はこれだけ。動詞すら要らない",
+    "nuance": "Grabはアプリで行き先設定済みなので確認質問。チャーターや流しのタクシーで必須",
+    "pattern": ""
+  },
+  {
+    "id": "spa-04",
+    "scene": "spa",
+    "cue": { "en": "What kind of massage would you like?", "ja": "どのマッサージになさいますか？" },
+    "ja": "バリニーズマッサージでお願いします",
+    "best": "The Balinese massage, please.",
+    "structure": "The + メニュー名 + please — メニューから選ぶときの定番。指差しと併用で確実",
+    "nuance": "おすすめを聞くなら What do you recommend? が万能",
+    "pattern": ""
+  },
+  {
+    "id": "shop-06",
+    "scene": "shopping",
+    "cue": { "en": "Where are you from?", "ja": "どちらから来たんですか？" },
+    "ja": "日本からです",
+    "best": "We're from Japan.",
+    "structure": "We're from + 国 — スモールトークの定番第一問。from のあとに国名を置くだけ",
+    "nuance": "店・タクシー・スパ、どこでも聞かれる。First time in Bali! と続けると会話が弾む",
+    "pattern": ""
+  },
+  {
+    "id": "checkout-05",
+    "scene": "checkout",
+    "cue": { "en": "How was your stay?", "ja": "ご滞在はいかがでしたか？" },
+    "ja": "素晴らしかったです。いろいろありがとう",
+    "best": "It was wonderful. Thank you for everything.",
+    "structure": "It was + 形容詞 + Thank you for everything — 感想＋お礼の締めセット",
+    "nuance": "記念日対応してくれたなら The anniversary setup was lovely. と一言添えると喜ばれる",
+    "pattern": ""
   }
 ]
