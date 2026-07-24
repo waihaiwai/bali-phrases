@@ -1,0 +1,103 @@
+[
+  {
+    "id": "rp-flight",
+    "scene": "flight",
+    "title": "機内食サービス",
+    "turns": [
+      { "who": "staff", "en": "Chicken or beef?", "ja": "チキンとビーフ、どちらになさいますか？" },
+      { "who": "you", "ref": "flight-02" },
+      { "who": "staff", "en": "Anything to drink?", "ja": "お飲み物はいかがですか？" },
+      { "who": "you", "ref": "flight-01" },
+      { "who": "staff", "en": "Here you go. Enjoy your meal.", "ja": "どうぞ。ごゆっくり" },
+      { "who": "you", "ja": "ありがとう", "en": "Thank you." }
+    ]
+  },
+  {
+    "id": "rp-immigration",
+    "scene": "dps-arrival",
+    "title": "入国審査（有人レーン）",
+    "turns": [
+      { "who": "staff", "en": "Good afternoon. Passport, please.", "ja": "こんにちは。パスポートをどうぞ" },
+      { "who": "you", "ja": "はい、どうぞ", "en": "Here you go." },
+      { "who": "staff", "en": "What's the purpose of your visit?", "ja": "渡航の目的は何ですか？" },
+      { "who": "you", "ref": "dps-05" },
+      { "who": "staff", "en": "How long are you staying?", "ja": "どのくらい滞在しますか？" },
+      { "who": "you", "ref": "dps-06" },
+      { "who": "staff", "en": "Where are you staying?", "ja": "どこに滞在しますか？" },
+      { "who": "you", "ref": "dps-02" },
+      { "who": "staff", "en": "Thank you. Enjoy your holiday.", "ja": "結構です。良いご旅行を" },
+      { "who": "you", "ja": "ありがとうございます", "en": "Thank you!" }
+    ]
+  },
+  {
+    "id": "rp-pickup",
+    "scene": "pickup",
+    "title": "空港送迎ピックアップ",
+    "turns": [
+      { "who": "you", "note": "「The Ritz-Carlton, Bali」の看板を持つドライバーに声をかける", "ref": "pickup-02" },
+      { "who": "staff", "en": "Yes, Mr. Tanaka! Welcome to Bali. Let me help you with your luggage.", "ja": "タナカ様ですね！ようこそバリへ。お荷物をお持ちします" },
+      { "who": "you", "ja": "ありがとうございます", "en": "Thank you very much." },
+      { "who": "staff", "en": "Is this your first time in Bali?", "ja": "バリは初めてですか？" },
+      { "who": "you", "ja": "はい、初めてです。とても楽しみにしてました", "en": "Yes, first time. We're very excited." },
+      { "who": "staff", "en": "Wonderful. You'll love it here.", "ja": "それは素晴らしい。きっと気に入りますよ" },
+      { "who": "you", "ref": "pickup-03" },
+      { "who": "staff", "en": "About forty minutes, depending on traffic.", "ja": "渋滞次第ですが40分ほどです" },
+      { "who": "you", "ja": "わかりました、ありがとう", "en": "I see, thank you." }
+    ]
+  },
+  {
+    "id": "rp-checkin",
+    "scene": "hotel-checkin",
+    "title": "チェックイン一連の流れ",
+    "turns": [
+      { "who": "staff", "en": "Good afternoon. Welcome to The Ritz-Carlton. Are you checking in?", "ja": "こんにちは。ようこそリッツ・カールトンへ。チェックインですか？" },
+      { "who": "you", "ref": "checkin-01" },
+      { "who": "staff", "en": "May I see your passport, please?", "ja": "パスポートを拝見できますか？" },
+      { "who": "you", "ref": "checkin-06" },
+      { "who": "staff", "en": "Thank you. You'll be staying five nights, is that right?", "ja": "ありがとうございます。5泊のご滞在でお間違いないですか？" },
+      { "who": "you", "ja": "はい、そうです。それと、クイーンベッド2台の部屋をリクエストしていました", "en": "That's right. We also requested a room with two queen beds." },
+      { "who": "staff", "en": "Let me check... Yes, that's arranged. Your room will be ready at three. You're welcome to use the pool and spa until then.", "ja": "確認します…ご用意できています。お部屋は15時のご案内です。それまでプールやスパをご利用ください" },
+      { "who": "you", "ref": "checkin-04" },
+      { "who": "staff", "en": "Of course. By the way, I see you're celebrating your anniversary — congratulations!", "ja": "もちろんです。ところで記念日のご旅行だそうですね。おめでとうございます！" },
+      { "who": "you", "ja": "ありがとう！楽しみにしています", "en": "Thank you! We're really looking forward to our stay." }
+    ]
+  },
+  {
+    "id": "rp-restaurant",
+    "scene": "restaurant",
+    "title": "レストラン（入店〜会計）",
+    "turns": [
+      { "who": "staff", "en": "Good evening. How many?", "ja": "こんばんは。何名様ですか？" },
+      { "who": "you", "ref": "rest-01" },
+      { "who": "staff", "en": "Of course, right this way. Anything to drink?", "ja": "もちろんです、こちらへどうぞ。お飲み物は？" },
+      { "who": "you", "ref": "rest-05" },
+      { "who": "staff", "en": "Are you ready to order?", "ja": "ご注文はお決まりですか？" },
+      { "who": "you", "ref": "rest-03" },
+      { "who": "staff", "en": "Sure. Anything else?", "ja": "かしこまりました。他にはよろしいですか？" },
+      { "who": "you", "ref": "rest-02" },
+      { "who": "staff", "en": "Not a problem. It'll be about fifteen minutes.", "ja": "承知しました。15分ほどお待ちください" },
+      { "who": "you", "note": "（食事中、店員が様子を見に来た）", "ja": "とても美味しいです", "en": "Everything's great, thank you." },
+      { "who": "you", "note": "（食後、店員を呼んで）", "ref": "rest-04" },
+      { "who": "staff", "en": "Cash or card?", "ja": "現金とカード、どちらですか？" },
+      { "who": "you", "ref": "rest-07" }
+    ]
+  },
+  {
+    "id": "rp-checkout",
+    "scene": "checkout",
+    "title": "チェックアウト〜空港へ",
+    "turns": [
+      { "who": "you", "note": "フロントにて", "ref": "checkout-04" },
+      { "who": "staff", "en": "Certainly. How was your stay?", "ja": "かしこまりました。ご滞在はいかがでしたか？" },
+      { "who": "you", "ref": "checkout-05" },
+      { "who": "staff", "en": "Wonderful to hear. Here's your bill.", "ja": "何よりです。こちらが明細です" },
+      { "who": "you", "ja": "問題ないです。このカードで精算をお願いします", "en": "Everything looks good. Could you charge it to this card?" },
+      { "who": "staff", "en": "Of course.", "ja": "かしこまりました" },
+      { "who": "you", "ref": "checkout-02" },
+      { "who": "staff", "en": "Certainly. We'll keep them at the bell desk.", "ja": "もちろんです。ベルデスクでお預かりします" },
+      { "who": "you", "ref": "checkout-03" },
+      { "who": "staff", "en": "Of course. Your taxi will be ready at noon.", "ja": "承知しました。正午にタクシーをご用意します" },
+      { "who": "you", "ja": "いろいろありがとうございました！", "en": "Thank you for everything!" }
+    ]
+  }
+]

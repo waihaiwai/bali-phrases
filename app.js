@@ -7,6 +7,7 @@
     scenes: [],
     cards: [],
     patterns: {},
+    dialogs: [],
     tab: "list",
     practice: null, // { queue, index, revealed, sceneId }
     ratings: loadRatings(),
@@ -251,6 +252,105 @@
     $view.appendChild(node);
   }
 
+  // ---------- roleplay view ----------
+  function resolveTurn(t) {
+    if (t.ref) {
+      const c = state.cards.find(c => c.id === t.ref);
+      if (c) return { who: "you", ja: c.ja, en: c.best, note: t.note };
+    }
+    return t;
+  }
+
+  function renderRoleplayList() {
+    $view.innerHTML = "";
+    const wrap = el(`<div class="practice-setup"><h2>シーン別ロールプレイ — 一連の会話を通しで</h2></div>`);
+    state.dialogs.forEach(d => {
+      const scene = state.scenes.find(s => s.id === d.scene);
+      const yours = d.turns.filter(t => t.who === "you" || t.ref).length;
+      const b = el(`
+        <button class="scene-head" style="margin-bottom:8px">
+          <span class="s-icon">${scene ? scene.icon : "🎭"}</span>
+          <span>
+            <span class="s-title">${esc(d.title)}</span><br>
+            <span class="s-desc">あなたの発話 ${yours}回</span>
+          </span>
+          <span class="s-count">▶ 開始</span>
+        </button>`);
+      b.addEventListener("click", () => startRoleplay(d));
+      wrap.appendChild(b);
+    });
+    $view.appendChild(wrap);
+  }
+
+  function startRoleplay(d) {
+    $view.innerHTML = "";
+    const wrap = el(`
+      <div>
+        <div class="rp-head">🎭 ${esc(d.title)}<button class="chip rp-quit">やめる</button></div>
+        <div class="rp-chat"></div>
+        <div class="rp-controls"></div>
+      </div>`);
+    $view.appendChild(wrap);
+    wrap.querySelector(".rp-quit").addEventListener("click", () => {
+      speechSynthesis.cancel?.();
+      renderRoleplayList();
+    });
+    const chat = wrap.querySelector(".rp-chat");
+    const controls = wrap.querySelector(".rp-controls");
+    const turns = d.turns.map(resolveTurn);
+    let i = 0;
+
+    function addBubble(t, side) {
+      const b = el(`
+        <div class="bubble ${side}">
+          <div class="b-en">${esc(t.en)}</div>
+          ${side === "staff" ? `<div class="b-ja">${esc(t.ja)}</div>` : ""}
+        </div>`);
+      b.addEventListener("click", () => speak(t.en));
+      chat.appendChild(b);
+      speak(t.en);
+    }
+
+    function advance() {
+      controls.innerHTML = "";
+      // 相手のターンを消化（連続はデータ側で作らない前提）
+      while (i < turns.length && turns[i].who === "staff") {
+        addBubble(turns[i], "staff");
+        i++;
+      }
+      if (i >= turns.length) {
+        const done = el(`
+          <div class="done-box" style="padding:24px 10px">
+            <div class="big">🎉</div>
+            <p><strong>ロープレ完了！</strong><br>詰まったフレーズは練習モードで個別に鍛えよう</p>
+            <button class="ghost-btn again">もう一度</button>
+            <button class="ghost-btn back">一覧へ戻る</button>
+          </div>`);
+        done.querySelector(".again").addEventListener("click", () => startRoleplay(d));
+        done.querySelector(".back").addEventListener("click", renderRoleplayList);
+        controls.appendChild(done);
+        return;
+      }
+      const t = turns[i];
+      const p = el(`
+        <div class="rp-your-turn">
+          ${t.note ? `<div class="rp-note">${esc(t.note)}</div>` : ""}
+          <div class="rp-prompt">🗣 ${esc(t.ja)}</div>
+          <div class="hint">声に出して言ってから確認</div>
+          <button class="big-btn">英文を見る</button>
+        </div>`);
+      p.querySelector(".big-btn").addEventListener("click", () => {
+        addBubble(t, "you");
+        i++;
+        advance();
+        window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+      });
+      controls.appendChild(p);
+      window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    }
+    advance();
+  }
+
   // ---------- patterns view ----------
   function showPatterns(focusKey) {
     setTab("patterns");
@@ -294,6 +394,7 @@
     speechSynthesis.cancel?.();
     if (tab === "list") renderList();
     else if (tab === "practice") renderPracticeSetup();
+    else if (tab === "roleplay") renderRoleplayList();
     else renderPatterns();
     window.scrollTo(0, 0);
   }
@@ -304,14 +405,16 @@
   // ---------- boot ----------
   async function boot() {
     try {
-      const [scenes, cards, patterns] = await Promise.all([
+      const [scenes, cards, patterns, dialogs] = await Promise.all([
         fetch("data/scenes.json").then(r => r.json()),
         fetch("data/cards.json").then(r => r.json()),
         fetch("data/patterns.json").then(r => r.json()),
+        fetch("data/dialogs.json").then(r => r.json()),
       ]);
       state.scenes = scenes;
       state.cards = cards;
       state.patterns = patterns;
+      state.dialogs = dialogs;
       setTab("list");
     } catch (e) {
       $view.innerHTML = `<p style="padding:20px;color:#d05446">データの読み込みに失敗: ${esc(e.message)}</p>`;

@@ -1,4 +1,4 @@
-const CACHE = "bali-phrases-v3";
+const CACHE = "bali-phrases-v4";
 const ASSETS = [
   "./",
   "./index.html",
@@ -9,6 +9,7 @@ const ASSETS = [
   "./data/scenes.json",
   "./data/cards.json",
   "./data/patterns.json",
+  "./data/dialogs.json",
 ];
 
 self.addEventListener("install", e => {

@@ -256,3 +256,47 @@ main { padding: 0 14px 20px; max-width: 640px; margin: 0 auto; }
 .pattern-card li::after { content: "”"; color: var(--muted); }
 .pattern-card .p-count { font-size: 0.7rem; color: var(--muted); margin-top: 8px; }
 .highlight { outline: 2px solid var(--accent); }
+
+/* ---- roleplay ---- */
+.rp-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin: 10px 2px 12px;
+}
+.rp-chat { display: flex; flex-direction: column; gap: 8px; }
+.bubble {
+  max-width: 85%;
+  border-radius: 14px;
+  padding: 10px 13px;
+  cursor: pointer;
+  line-height: 1.5;
+}
+.bubble.staff {
+  align-self: flex-start;
+  background: #fdf3e3;
+  border: 1px solid #efdcb4;
+  border-bottom-left-radius: 4px;
+}
+.bubble.you {
+  align-self: flex-end;
+  background: var(--accent);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+.bubble .b-en { font-size: 0.95rem; font-weight: 700; }
+.bubble.staff .b-en { color: #8a6414; }
+.bubble .b-ja { font-size: 0.7rem; color: var(--muted); margin-top: 3px; }
+.rp-your-turn {
+  margin-top: 14px;
+  background: var(--card);
+  border: 1px dashed var(--accent);
+  border-radius: var(--radius);
+  padding: 14px;
+}
+.rp-note { font-size: 0.72rem; color: var(--muted); font-style: italic; margin-bottom: 6px; }
+.rp-prompt { font-size: 1rem; font-weight: 700; line-height: 1.6; }
+.rp-your-turn .hint { font-size: 0.72rem; color: var(--muted); margin-top: 6px; }
+.rp-your-turn .big-btn { margin-top: 12px; }
