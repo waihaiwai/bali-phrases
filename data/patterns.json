@@ -1,4 +1,14 @@
 {
+  "noun-please": {
+    "title": "〜, please（最短注文形）",
+    "desc": "名詞（＋数量）に please を付けるだけの旅行最頻形。注文・支払い方法・行き先・メニュー選択、二択質問への答えまで全部これで返せる。推定で旅行中30回使う、文法ゼロのコスパ王。",
+    "examples": ["Two Bintangs, please.", "Card, please.", "To the Ritz-Carlton in Nusa Dua, please."]
+  },
+  "short-response": {
+    "title": "短答リアクション",
+    "desc": "聞かれたら名詞や一言で即答してOK。無理に文を作らない。Sure / That's right / thanks を添えると感じ良く決まる。相手の質問に2秒で返すための土台。",
+    "examples": ["Five nights.", "Sure, here you go.", "We're from Japan."]
+  },
   "could-i-get": {
     "title": "Could I get 〜?",
     "desc": "依頼の万能形。物・サービスを丁寧にもらう。get の代わりに have でも同じ。末尾に please を付ければ十分丁寧。",

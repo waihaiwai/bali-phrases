@@ -6,17 +6,22 @@
     "best": "Could I get some water, please?",
     "structure": "Could I get + 名詞 — 「もらえますか」の万能形。機内・レストラン・ホテル全部これでいける",
     "nuance": "Water, please. でも通じるが、Could I get 〜? が口から出ると全シーンで使い回せる",
-    "pattern": "could-i-get"
+    "pattern": "could-i-get",
+    "prio": "S"
   },
   {
     "id": "flight-02",
     "scene": "flight",
-    "cue": { "en": "Chicken or beef?", "ja": "チキンとビーフ、どちらになさいますか？" },
+    "cue": {
+      "en": "Chicken or beef?",
+      "ja": "チキンとビーフ、どちらになさいますか？"
+    },
     "ja": "チキンでお願いします",
     "best": "I'll have the chicken, please.",
     "structure": "I'll have + 選ぶ物 — 提示された選択肢から選ぶときの定番。レストランの注文にもそのまま使える",
     "nuance": "Chicken. だけだとぶっきらぼう。I'll have 〜 で「選びました」と丁寧に伝わる",
-    "pattern": ""
+    "pattern": "",
+    "prio": "S"
   },
   {
     "id": "flight-03",
@@ -25,7 +30,8 @@
     "best": "Excuse me, could I get through?",
     "structure": "Excuse me + Could I 〜? — 声かけ＋依頼のセット。get through で「通り抜ける」",
     "nuance": "Excuse me. だけで立っても伝わるが、一言添えるとスマート",
-    "pattern": "could-i-get"
+    "pattern": "could-i-get",
+    "prio": "A"
   },
   {
     "id": "sin-01",
@@ -34,7 +40,8 @@
     "best": "Where can I find the Skytrain to Terminal 3?",
     "structure": "Where can I find + 探し物 — 場所を聞く万能形。find を take に替えれば乗り物にも使える",
     "nuance": "Where is 〜? でもOK。can I find は「どう行けばいい?」のニュアンスが乗る",
-    "pattern": "where-can-i"
+    "pattern": "where-can-i",
+    "prio": "A"
   },
   {
     "id": "sin-02",
@@ -43,7 +50,8 @@
     "best": "Is this the gate for GA843 to Denpasar?",
     "structure": "Is this the 〜 for ...? — 目の前の物が目的の物か確かめる形。指差し確認の定番",
     "nuance": "不安なら搭乗券を見せながら聞けば確実。乗継3h25mなので焦らなくて大丈夫",
-    "pattern": ""
+    "pattern": "",
+    "prio": "B"
   },
   {
     "id": "sin-03",
@@ -52,7 +60,8 @@
     "best": "Do I need to go through security again?",
     "structure": "Do I need to 〜? — 「〜する必要ありますか」。手続きの要否確認はこの形",
     "nuance": "チャンギはゲート前検査方式。係員に聞けばすぐ教えてくれる",
-    "pattern": ""
+    "pattern": "",
+    "prio": "B"
   },
   {
     "id": "sin-04",
@@ -61,7 +70,8 @@
     "best": "Is it possible to leave the airport during my layover?",
     "structure": "Is it possible to 〜? — できるかどうかの打診。layover =乗継時間",
     "nuance": "ラウンジやトランジットホテルを探すなら Where can I find 〜? で応用",
-    "pattern": "is-it-possible"
+    "pattern": "is-it-possible",
+    "prio": "C"
   },
   {
     "id": "dps-01",
@@ -70,17 +80,22 @@
     "best": "I've already applied for the e-VOA.",
     "structure": "I've already + 過去分詞 — 「もう済ませてあります」。手続き系で強力な一言",
     "nuance": "e-VOA事前申請済みならAuto Gateで会話なしの想定。有人レーンに回された時用",
-    "pattern": "already-done"
+    "pattern": "already-done",
+    "prio": "B"
   },
   {
     "id": "dps-02",
     "scene": "dps-arrival",
-    "cue": { "en": "Where are you staying?", "ja": "どこに滞在しますか？" },
+    "cue": {
+      "en": "Where are you staying?",
+      "ja": "どこに滞在しますか？"
+    },
     "ja": "ヌサドゥアのリッツ・カールトンに5泊します",
     "best": "We're staying at The Ritz-Carlton in Nusa Dua for five nights.",
     "structure": "We're staying at + 場所 + for + 期間 — 現在進行形で確定した予定を表す定番形",
     "nuance": "定番質問 Where are you staying? への回答。ホテル名と泊数は淀みなく言えるように",
-    "pattern": ""
+    "pattern": "",
+    "prio": "B"
   },
   {
     "id": "dps-03",
@@ -89,7 +104,8 @@
     "best": "Where can I pay the tourist levy?",
     "structure": "Where can I + 動詞 — 「どこで〜できますか」。pay / buy / find を入れ替えて応用",
     "nuance": "Love Baliで事前納付済みなら I've already paid it online. でOK",
-    "pattern": "where-can-i"
+    "pattern": "where-can-i",
+    "prio": "C"
   },
   {
     "id": "dps-04",
@@ -98,7 +114,8 @@
     "best": "Nothing to declare.",
     "structure": "Nothing to + 動詞 — 「〜するものはない」の省略定型。フルで言うなら I have nothing to declare.",
     "nuance": "税関申告はAll Indonesiaで電子提出済みの想定。QRを見せれば会話はほぼ不要",
-    "pattern": ""
+    "pattern": "short-response",
+    "prio": "B"
   },
   {
     "id": "pickup-01",
@@ -107,7 +124,8 @@
     "best": "I'm looking for the driver from The Ritz-Carlton.",
     "structure": "I'm looking for + 探し物 — 「探しています」。人にも物にも使える",
     "nuance": "看板は「The Ritz-Carlton, Bali」表記で名前は出ない。見つからなければ空港代表者へ電話",
-    "pattern": "where-can-i"
+    "pattern": "where-can-i",
+    "prio": "B"
   },
   {
     "id": "pickup-02",
@@ -116,7 +134,8 @@
     "best": "We have a pickup arranged under Tanaka.",
     "structure": "under + 名字 — 「〜名義で」。予約・手配の提示は全部この形",
     "nuance": "We have a reservation under 〜 と同型。チェックイン・レストランでも再登場する",
-    "pattern": "reservation-under"
+    "pattern": "reservation-under",
+    "prio": "B"
   },
   {
     "id": "pickup-03",
@@ -125,17 +144,22 @@
     "best": "How long does it take to the hotel?",
     "structure": "How long does it take to + 場所 — 所要時間を聞く定型。take が「時間がかかる」",
     "nuance": "空港→ホテルは30〜45分。ドライバーとのスモールトークの入り口にも",
-    "pattern": "wh-question"
+    "pattern": "wh-question",
+    "prio": "A"
   },
   {
     "id": "checkin-01",
     "scene": "hotel-checkin",
-    "cue": { "en": "Good afternoon. Are you checking in?", "ja": "こんにちは。チェックインですか？" },
+    "cue": {
+      "en": "Good afternoon. Are you checking in?",
+      "ja": "こんにちは。チェックインですか？"
+    },
     "ja": "はい。タナカ名義で予約しています",
     "best": "We have a reservation under Tanaka.",
     "structure": "We have a reservation under + 名字 — チェックインの第一声はこれで完結",
     "nuance": "名前は例なので自分の名字に置き換えて練習。確認番号を求められたら Here's the confirmation number. と画面を見せれば十分",
-    "pattern": "reservation-under"
+    "pattern": "reservation-under",
+    "prio": "B"
   },
   {
     "id": "checkin-02",
@@ -144,7 +168,8 @@
     "best": "We requested a room with two queen beds.",
     "structure": "We requested + 名詞句 — 過去形で「事前に頼んであった」を伝える万能形",
     "nuance": "I want... は直接的すぎ。requested なら記録ベースで角が立たない",
-    "pattern": "past-request"
+    "pattern": "past-request",
+    "prio": "B"
   },
   {
     "id": "checkin-03",
@@ -153,7 +178,8 @@
     "best": "Is it possible to check in early?",
     "structure": "Is it possible to 〜? — ダメ元のお願いはこの形。断られても感じが悪くならない",
     "nuance": "部屋が未準備でも荷物を預けてプール・スパ・ジムが使える（ホテル回答済み）",
-    "pattern": "is-it-possible"
+    "pattern": "is-it-possible",
+    "prio": "B"
   },
   {
     "id": "checkin-04",
@@ -162,7 +188,8 @@
     "best": "Would it be okay if we left our luggage here until the room is ready?",
     "structure": "Would it be okay if + 過去形 — 丁寧な許可取り。if 節を過去形にするのがポイント",
     "nuance": "軽く言うなら Could we leave our luggage here? で同じ役割",
-    "pattern": "would-it-be-okay"
+    "pattern": "would-it-be-okay",
+    "prio": "B"
   },
   {
     "id": "checkin-05",
@@ -171,7 +198,8 @@
     "best": "We're celebrating our wedding anniversary.",
     "structure": "We're celebrating + お祝い事 — 記念日・誕生日を伝える定番。honeymoon にも応用可",
     "nuance": "ホテルには伝達済み。会話で触れられたらさらっと返せるように",
-    "pattern": ""
+    "pattern": "",
+    "prio": "B"
   },
   {
     "id": "concierge-01",
@@ -180,7 +208,8 @@
     "best": "Could you book a restaurant for us for tomorrow night?",
     "structure": "Could you + 動詞 + for us — 相手に動いてもらう依頼。for us で「私たちのために」",
     "nuance": "希望を添えるなら Somewhere with a nice view. のように一言足す",
-    "pattern": "could-you"
+    "pattern": "could-you",
+    "prio": "A"
   },
   {
     "id": "concierge-02",
@@ -189,7 +218,8 @@
     "best": "I'd like to arrange a private driver for a day trip to Ubud.",
     "structure": "I'd like to arrange + 手配物 — 手配依頼の切り出し。arrange が「段取りする」",
     "nuance": "スミニャック日帰りにも同じ形。a day trip to Seminyak に置き換えるだけ",
-    "pattern": "id-like-to"
+    "pattern": "id-like-to",
+    "prio": "A"
   },
   {
     "id": "concierge-03",
@@ -198,7 +228,8 @@
     "best": "Could you get us a Grab to Seminyak?",
     "structure": "Could you get us + 乗り物 — get us a taxi / a Grab で「呼んでもらう」",
     "nuance": "リッツ周辺はGrabの捕まりが悪いことがある。ホテル経由が確実",
-    "pattern": "could-you"
+    "pattern": "could-you",
+    "prio": "A"
   },
   {
     "id": "concierge-04",
@@ -207,17 +238,22 @@
     "best": "Do you have any tours to the rice terraces?",
     "structure": "Do you have any + 名詞 — 有無の確認。any を付けると「何かしらある?」と幅が出る",
     "nuance": "火山トレッキングなら any sunrise treks to Mount Batur に置き換え",
-    "pattern": "do-you-have"
+    "pattern": "do-you-have",
+    "prio": "A"
   },
   {
     "id": "rest-01",
     "scene": "restaurant",
-    "cue": { "en": "Good evening. How many?", "ja": "こんばんは。何名様ですか？" },
+    "cue": {
+      "en": "Good evening. How many?",
+      "ja": "こんばんは。何名様ですか？"
+    },
     "ja": "（予約なしで入店）2人ですが、席はありますか",
     "best": "Do you have a table for two?",
     "structure": "Do you have a table for + 人数 — 入店の第一声。予約ありなら under Tanaka を続ける",
     "nuance": "A table for two, please. でも同じ。for two だけ言えれば最悪伝わる",
-    "pattern": "do-you-have"
+    "pattern": "do-you-have",
+    "prio": "A"
   },
   {
     "id": "rest-02",
@@ -226,7 +262,8 @@
     "best": "Could you make it not too spicy?",
     "structure": "Could you make it + 状態 — 料理の仕上がりを頼む形。make it mild でも同じ",
     "nuance": "バリ料理はサンバルが辛いことがある。注文時に言うのが確実",
-    "pattern": "could-you"
+    "pattern": "could-you",
+    "prio": "A"
   },
   {
     "id": "rest-03",
@@ -235,7 +272,8 @@
     "best": "We'll have one nasi goreng and one mie goreng, please.",
     "structure": "We'll have + 数 + 料理名 — 複数人の注文はWe'llでまとめる。and でつなぐだけ",
     "nuance": "指差しながら This one and this one, please. でも十分通じる",
-    "pattern": ""
+    "pattern": "",
+    "prio": "S"
   },
   {
     "id": "rest-04",
@@ -244,7 +282,8 @@
     "best": "Could I get the bill, please?",
     "structure": "Could I get + the bill — 会計依頼の定番。bill はイギリス系、check は米系どちらも通じる",
     "nuance": "遠くの店員にはジェスチャー（宙にサインを書く仕草）＋ The bill, please. でOK",
-    "pattern": "could-i-get"
+    "pattern": "could-i-get",
+    "prio": "S"
   },
   {
     "id": "grab-01",
@@ -253,7 +292,8 @@
     "best": "Hi, are you here for Taro?",
     "structure": "Are you here for + 名前 — 迎えに来た相手の確認。送迎・配車全般で使える",
     "nuance": "Grabはアプリのナンバープレート照合が確実。声かけはこの一言で十分",
-    "pattern": ""
+    "pattern": "",
+    "prio": "A"
   },
   {
     "id": "grab-02",
@@ -262,7 +302,8 @@
     "best": "Could you wait here for about ten minutes?",
     "structure": "Could you wait here for + 時間 — about を付けると「〜くらい」と柔らかくなる",
     "nuance": "観光の途中下車で便利。チャーターなら Take your time. と返されるはず",
-    "pattern": "could-you"
+    "pattern": "could-you",
+    "prio": "A"
   },
   {
     "id": "grab-03",
@@ -271,7 +312,8 @@
     "best": "Could you pick us up here at four?",
     "structure": "Could you pick us up + 場所 + at + 時刻 — pick up が「迎えに行く」。時刻は at",
     "nuance": "4 p.m. と言えばより確実。指で4を出しながらでもOK",
-    "pattern": "could-you"
+    "pattern": "could-you",
+    "prio": "A"
   },
   {
     "id": "grab-04",
@@ -280,7 +322,8 @@
     "best": "How much for a full day?",
     "structure": "How much for + 対象 — 値段を聞く省略形。is it を省いてこれだけで自然",
     "nuance": "半日なら for half a day。金額はアプリの相場と見比べて判断",
-    "pattern": "wh-question"
+    "pattern": "wh-question",
+    "prio": "B"
   },
   {
     "id": "spa-01",
@@ -289,7 +332,8 @@
     "best": "I'd like to book a massage for two at four today.",
     "structure": "I'd like to book + 内容 + for + 人数 + at + 時刻 — 予約の要素を順に並べるだけ",
     "nuance": "リッツのスパはジャグジー・サウナ付き。部屋付け精算なら Charge it to the room, please.",
-    "pattern": "id-like-to"
+    "pattern": "id-like-to",
+    "prio": "B"
   },
   {
     "id": "spa-02",
@@ -298,17 +342,22 @@
     "best": "Do you have any openings this afternoon?",
     "structure": "Do you have any openings + 時間帯 — opening =予約の空き枠。レストランにも使える",
     "nuance": "availability を使って Do you have availability 〜? でも同じ",
-    "pattern": "do-you-have"
+    "pattern": "do-you-have",
+    "prio": "A"
   },
   {
     "id": "spa-03",
     "scene": "spa",
-    "cue": { "en": "How's the pressure?", "ja": "強さはいかがですか？" },
+    "cue": {
+      "en": "How's the pressure?",
+      "ja": "強さはいかがですか？"
+    },
     "ja": "もう少し弱めでお願いします",
     "best": "Could you go a little softer, please?",
     "structure": "Could you go + 比較級 — 強さ・速さの調整依頼。a little で「もう少し」",
     "nuance": "強めなら a bit stronger。ちょうど良ければ That's perfect. と伝えると施術者も安心",
-    "pattern": "could-you"
+    "pattern": "could-you",
+    "prio": "A"
   },
   {
     "id": "tour-01",
@@ -317,7 +366,8 @@
     "best": "What time should we be in the lobby?",
     "structure": "What time should we + 動詞 — 集合・出発時刻の確認。should で「〜すればいい?」",
     "nuance": "答えを聞いたら Seven, right? と復唱すると聞き間違いを防げる",
-    "pattern": "wh-question"
+    "pattern": "wh-question",
+    "prio": "A"
   },
   {
     "id": "tour-02",
@@ -326,7 +376,8 @@
     "best": "Could we take a short break?",
     "structure": "Could we take a break — 自分たちの行動の許可取り。short を付けて「少しだけ」",
     "nuance": "ペースが速いなら Could we slow down a bit? も同じ形で使える",
-    "pattern": "would-it-be-okay"
+    "pattern": "would-it-be-okay",
+    "prio": "A"
   },
   {
     "id": "tour-03",
@@ -335,7 +386,8 @@
     "best": "Could you take a photo of us?",
     "structure": "Could you take a photo of + 対象 — 写真依頼の定番。of us で「私たちの」",
     "nuance": "スマホを渡しながら言えば確実。縦で撮ってほしければ Vertical, please.",
-    "pattern": "could-you"
+    "pattern": "could-you",
+    "prio": "A"
   },
   {
     "id": "shop-01",
@@ -344,7 +396,8 @@
     "best": "How much is this?",
     "structure": "How much is + 対象 — 値段確認の最短形。複数なら How much are these?",
     "nuance": "ルピアは桁が大きい。数字はスマホの電卓に打ってもらうのが確実",
-    "pattern": "wh-question"
+    "pattern": "wh-question",
+    "prio": "A"
   },
   {
     "id": "shop-02",
@@ -353,7 +406,8 @@
     "best": "Could you do one hundred thousand?",
     "structure": "Could you do + 金額 — 値切りの定番。do が「その値段にする」の意味になる",
     "nuance": "市場では交渉が前提。笑顔で、ダメなら Okay, thank you! と引けば良い関係のまま",
-    "pattern": "could-you"
+    "pattern": "could-you",
+    "prio": "B"
   },
   {
     "id": "shop-03",
@@ -362,7 +416,8 @@
     "best": "Do you take credit cards?",
     "structure": "Do you take + 支払い手段 — take =「受け付ける」。Do you take JCB? などにも応用",
     "nuance": "ローカル店や市場は現金のみが多い。小額のIDR現金を常に持っておく",
-    "pattern": "do-you-have"
+    "pattern": "do-you-have",
+    "prio": "A"
   },
   {
     "id": "shop-04",
@@ -371,7 +426,8 @@
     "best": "I'd like to change yen into rupiah.",
     "structure": "I'd like to change A into B — 両替の定型。change + 通貨 + into + 通貨",
     "nuance": "レートを先に聞くなら What's the rate for yen? 認可両替商（緑の看板）を選ぶ",
-    "pattern": "id-like-to"
+    "pattern": "id-like-to",
+    "prio": "C"
   },
   {
     "id": "trouble-01",
@@ -380,7 +436,8 @@
     "best": "My wife isn't feeling well.",
     "structure": "主語 + isn't feeling well — 体調不良の定番表現。I'm not feeling well. で自分にも",
     "nuance": "症状を足すなら She has a stomachache.（腹痛）/ a fever（熱）",
-    "pattern": ""
+    "pattern": "",
+    "prio": "C"
   },
   {
     "id": "trouble-02",
@@ -389,7 +446,8 @@
     "best": "I'd like to see a doctor. Is there a clinic nearby?",
     "structure": "I'd like to see a doctor + Is there 〜 nearby? — 要望＋場所確認の2文セット",
     "nuance": "ヌサドゥアならBIMC Hospital。受診前に保険サポートラインへ連絡（キャッシュレス提携）",
-    "pattern": "id-like-to"
+    "pattern": "id-like-to",
+    "prio": "C"
   },
   {
     "id": "trouble-03",
@@ -398,7 +456,8 @@
     "best": "We have travel insurance. Could I call them first?",
     "structure": "We have travel insurance — まず保険の存在を宣言。そのうえで Could I 〜? で許可取り",
     "nuance": "契約証番号と現地サポートの電話番号はスマホに控えておく。事故は30日以内連絡・領収書必須",
-    "pattern": "could-i-get"
+    "pattern": "could-i-get",
+    "prio": "C"
   },
   {
     "id": "trouble-04",
@@ -407,7 +466,8 @@
     "best": "I think I left my phone in the taxi.",
     "structure": "I think I left + 物 + in + 場所 — 紛失報告の定型。leave の過去形 left で「置き忘れた」",
     "nuance": "I think を頭に付けると断定を避けられる。Grabならアプリからドライバーに連絡可能",
-    "pattern": "there-seems"
+    "pattern": "there-seems",
+    "prio": "C"
   },
   {
     "id": "trouble-05",
@@ -416,7 +476,8 @@
     "best": "I think there's a mistake in the bill.",
     "structure": "I think there's a mistake in + 対象 — 人ではなく問題を主語にする丁寧な指摘",
     "nuance": "You made a mistake. は責め口調。I think there's 〜 なら相手も直しやすい",
-    "pattern": "there-seems"
+    "pattern": "there-seems",
+    "prio": "C"
   },
   {
     "id": "checkout-01",
@@ -425,7 +486,8 @@
     "best": "Is it possible to have a late checkout? Our flight is at one forty.",
     "structure": "Is it possible to 〜? + 理由 — 打診に理由を1文添えると通りやすい",
     "nuance": "チェックアウトは12:00。フライトはDPS 13:40発なので実質不要だが交渉の練習に最適",
-    "pattern": "is-it-possible"
+    "pattern": "is-it-possible",
+    "prio": "B"
   },
   {
     "id": "checkout-02",
@@ -434,7 +496,8 @@
     "best": "Could we leave our bags here after checkout?",
     "structure": "Could we leave + 物 + here — 預かり依頼の定番。after checkout で期間を明示",
     "nuance": "チェックイン時の until the room is ready と対になる表現。同じ形の再利用",
-    "pattern": "would-it-be-okay"
+    "pattern": "would-it-be-okay",
+    "prio": "B"
   },
   {
     "id": "checkout-03",
@@ -443,7 +506,8 @@
     "best": "Could you arrange a taxi to the airport for noon?",
     "structure": "Could you arrange + 乗り物 + for + 時刻 — 手配依頼。for noon で「正午に合わせて」",
     "nuance": "復路はGrab予定。Could you get us a Grab? でも同じ。余裕を持って11時台推奨",
-    "pattern": "could-you"
+    "pattern": "could-you",
+    "prio": "B"
   },
   {
     "id": "checkout-04",
@@ -452,116 +516,161 @@
     "best": "We'd like to check out, please.",
     "structure": "We'd like to + 動詞 — 丁寧な意思表明。手続きの開始宣言はこの形",
     "nuance": "部屋番号を聞かれたら Room + 番号。精算明細の確認は trouble-05 の形が使える",
-    "pattern": "id-like-to"
+    "pattern": "id-like-to",
+    "prio": "B"
   },
   {
     "id": "dps-05",
     "scene": "dps-arrival",
-    "cue": { "en": "What's the purpose of your visit?", "ja": "渡航の目的は何ですか？" },
+    "cue": {
+      "en": "What's the purpose of your visit?",
+      "ja": "渡航の目的は何ですか？"
+    },
     "ja": "観光で来ました",
     "best": "We're here on vacation.",
     "structure": "We're here on/for + 目的 — 目的を答える定番。on vacation / for sightseeing",
     "nuance": "入国審査の最頻出質問。Vacation. の一語でも通じるが、文で言えると落ち着いて見える",
-    "pattern": ""
+    "pattern": "short-response",
+    "prio": "B"
   },
   {
     "id": "dps-06",
     "scene": "dps-arrival",
-    "cue": { "en": "How long are you staying?", "ja": "どのくらい滞在しますか？" },
+    "cue": {
+      "en": "How long are you staying?",
+      "ja": "どのくらい滞在しますか？"
+    },
     "ja": "5泊です",
     "best": "Five nights.",
     "structure": "数 + nights — 期間の質問は名詞だけの短答でOK。無理に文にしなくていい",
     "nuance": "days ではなく nights で答えるとホテル滞在と揃って明確。Five nights, until the 14th. と足しても良い",
-    "pattern": ""
+    "pattern": "short-response",
+    "prio": "B"
   },
   {
     "id": "checkin-06",
     "scene": "hotel-checkin",
-    "cue": { "en": "May I see your passport, please?", "ja": "パスポートを拝見できますか？" },
+    "cue": {
+      "en": "May I see your passport, please?",
+      "ja": "パスポートを拝見できますか？"
+    },
     "ja": "はい、どうぞ",
     "best": "Sure, here you go.",
     "structure": "Here you go — 物を手渡すときの万能フレーズ。Sure を頭に付けて快諾の響きに",
     "nuance": "Here it is. でも同じ。チェックイン・両替・買い物、手渡す場面すべてで使う",
-    "pattern": ""
+    "pattern": "short-response",
+    "prio": "S"
   },
   {
     "id": "concierge-05",
     "scene": "concierge",
-    "cue": { "en": "What time would you like?", "ja": "何時がよろしいですか？" },
+    "cue": {
+      "en": "What time would you like?",
+      "ja": "何時がよろしいですか？"
+    },
     "ja": "できれば19時でお願いします",
     "best": "Seven o'clock, if possible.",
     "structure": "時刻 + if possible — 希望を伝えつつ相手の都合に譲る形。予約交渉の定番",
     "nuance": "満席なら What times do you have? と聞き返せば選択肢をくれる",
-    "pattern": ""
+    "pattern": "noun-please",
+    "prio": "A"
   },
   {
     "id": "rest-05",
     "scene": "restaurant",
-    "cue": { "en": "Anything to drink?", "ja": "お飲み物はいかがですか？" },
+    "cue": {
+      "en": "Anything to drink?",
+      "ja": "お飲み物はいかがですか？"
+    },
     "ja": "ビンタンを2つお願いします",
     "best": "Two Bintangs, please.",
     "structure": "数 + 品名 + please — 注文の最短形。飲み物はこれで十分",
     "nuance": "Bintang はバリの定番ビール。水なら Just water, please.（just で「とりあえず水だけ」感）",
-    "pattern": ""
+    "pattern": "noun-please",
+    "prio": "S"
   },
   {
     "id": "rest-06",
     "scene": "restaurant",
-    "cue": { "en": "How is everything?", "ja": "お料理はいかがですか？" },
+    "cue": {
+      "en": "How is everything?",
+      "ja": "お料理はいかがですか？"
+    },
     "ja": "とても美味しいです",
     "best": "Everything's great, thank you.",
     "structure": "Everything's + 形容詞 — 食事中の様子伺いへの定番返し。thank you で締める",
     "nuance": "深い意味のない挨拶的質問。Great, thanks! だけでも十分",
-    "pattern": ""
+    "pattern": "short-response",
+    "prio": "S"
   },
   {
     "id": "rest-07",
     "scene": "restaurant",
-    "cue": { "en": "Cash or card?", "ja": "お支払いは現金とカード、どちらですか？" },
+    "cue": {
+      "en": "Cash or card?",
+      "ja": "お支払いは現金とカード、どちらですか？"
+    },
     "ja": "カードでお願いします",
     "best": "Card, please.",
     "structure": "選択肢 + please — 二択質問はどちらかを言って please。それだけで完結",
     "nuance": "タッチ決済なら端末にかざすだけ。By card, please. とフルで言ってもOK",
-    "pattern": ""
+    "pattern": "noun-please",
+    "prio": "S"
   },
   {
     "id": "grab-05",
     "scene": "grab",
-    "cue": { "en": "Where to?", "ja": "どちらまで行きますか？" },
+    "cue": {
+      "en": "Where to?",
+      "ja": "どちらまで行きますか？"
+    },
     "ja": "ヌサドゥアのリッツ・カールトンまでお願いします",
     "best": "To the Ritz-Carlton in Nusa Dua, please.",
     "structure": "To + 目的地 + please — 行き先はこれだけ。動詞すら要らない",
     "nuance": "Grabはアプリで行き先設定済みなので確認質問。チャーターや流しのタクシーで必須",
-    "pattern": ""
+    "pattern": "noun-please",
+    "prio": "S"
   },
   {
     "id": "spa-04",
     "scene": "spa",
-    "cue": { "en": "What kind of massage would you like?", "ja": "どのマッサージになさいますか？" },
+    "cue": {
+      "en": "What kind of massage would you like?",
+      "ja": "どのマッサージになさいますか？"
+    },
     "ja": "バリニーズマッサージでお願いします",
     "best": "The Balinese massage, please.",
     "structure": "The + メニュー名 + please — メニューから選ぶときの定番。指差しと併用で確実",
     "nuance": "おすすめを聞くなら What do you recommend? が万能",
-    "pattern": ""
+    "pattern": "noun-please",
+    "prio": "A"
   },
   {
     "id": "shop-06",
     "scene": "shopping",
-    "cue": { "en": "Where are you from?", "ja": "どちらから来たんですか？" },
+    "cue": {
+      "en": "Where are you from?",
+      "ja": "どちらから来たんですか？"
+    },
     "ja": "日本からです",
     "best": "We're from Japan.",
     "structure": "We're from + 国 — スモールトークの定番第一問。from のあとに国名を置くだけ",
     "nuance": "店・タクシー・スパ、どこでも聞かれる。First time in Bali! と続けると会話が弾む",
-    "pattern": ""
+    "pattern": "short-response",
+    "prio": "S"
   },
   {
     "id": "checkout-05",
     "scene": "checkout",
-    "cue": { "en": "How was your stay?", "ja": "ご滞在はいかがでしたか？" },
+    "cue": {
+      "en": "How was your stay?",
+      "ja": "ご滞在はいかがでしたか？"
+    },
     "ja": "素晴らしかったです。いろいろありがとう",
     "best": "It was wonderful. Thank you for everything.",
     "structure": "It was + 形容詞 + Thank you for everything — 感想＋お礼の締めセット",
     "nuance": "記念日対応してくれたなら The anniversary setup was lovely. と一言添えると喜ばれる",
-    "pattern": ""
+    "pattern": "",
+    "prio": "A"
   }
 ]

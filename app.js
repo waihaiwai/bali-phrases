@@ -111,7 +111,7 @@
     const node = el(`
       <article class="card" id="card-${c.id}">
         ${c.cue ? `<button class="cue"><span class="cue-en">“${esc(c.cue.en)}”</span><span class="cue-ja">${esc(c.cue.ja)}</span></button>` : ""}
-        <div class="ja">${esc(c.ja)}</div>
+        <div class="ja">${c.prio ? `<span class="prio prio-${c.prio}">${c.prio}</span>` : ""}${esc(c.ja)}</div>
         <div class="best-row">
           <div class="best">${esc(c.best)}</div>
           <button class="speak-btn" aria-label="読み上げ">🔊</button>
@@ -142,6 +142,11 @@
     allBtn.addEventListener("click", () => startPractice(null));
     row.appendChild(allBtn);
 
+    const instantCount = state.cards.filter(c => c.prio === "S" || c.prio === "A").length;
+    const instBtn = el(`<button class="chip inst">⚡ 即答トレ S+A <span class="cnt">${instantCount}</span></button>`);
+    instBtn.addEventListener("click", () => startPractice("instant"));
+    row.appendChild(instBtn);
+
     if (weakCount > 0) {
       const weakBtn = el(`<button class="chip weak">🔥 弱いカード <span class="cnt">${weakCount}</span></button>`);
       weakBtn.addEventListener("click", () => startPractice("weak"));
@@ -157,14 +162,16 @@
     });
 
     const rated = Object.keys(state.ratings).length;
-    wrap.querySelector(".stats-line").textContent =
-      rated ? `これまでに ${rated}/${state.cards.length} 枚を練習済み` : "練習の記録はまだないよ。まず1周してみよう";
+    wrap.querySelector(".stats-line").innerHTML =
+      (rated ? `これまでに ${rated}/${state.cards.length} 枚を練習済み` : "練習の記録はまだないよ。まず「⚡即答トレ」から") +
+      `<br>優先度: <b>S</b>=毎日何度も <b>A</b>=毎日1〜2回 <b>B</b>=一発勝負 <b>C</b>=翻訳アプリでも可`;
     $view.appendChild(wrap);
   }
 
   function startPractice(sceneId) {
     let pool;
     if (sceneId === "weak") pool = state.cards.filter(c => isWeak(c.id));
+    else if (sceneId === "instant") pool = state.cards.filter(c => c.prio === "S" || c.prio === "A");
     else if (sceneId) pool = cardsOf(sceneId);
     else pool = state.cards.slice();
     // weak-first weighted order with random tiebreak
@@ -186,7 +193,7 @@
       <div>
         <div class="practice-card">
           <div class="meta">
-            <span>${scene ? scene.icon + " " + esc(scene.title) : ""}</span>
+            <span>${scene ? scene.icon + " " + esc(scene.title) : ""}${c.prio ? ` <span class="prio prio-${c.prio}">${c.prio}</span>` : ""}</span>
             <span>${p.index + 1} / ${p.queue.length}</span>
           </div>
           ${c.cue ? `<button class="cue"><span class="cue-en">“${esc(c.cue.en)}”</span><span class="cue-ja">${esc(c.cue.ja)}</span></button>` : ""}

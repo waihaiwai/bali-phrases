@@ -172,6 +172,22 @@ main { padding: 0 14px 20px; max-width: 640px; margin: 0 auto; }
   color: var(--ink);
 }
 .chip.weak { border-color: var(--bad); color: var(--bad); }
+.chip.inst { border-color: var(--soso); color: #8a6414; background: #fdf3e3; font-weight: 700; }
+
+.prio {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 800;
+  border-radius: 5px;
+  padding: 1px 6px;
+  margin-right: 6px;
+  vertical-align: 1px;
+  color: #fff;
+}
+.prio-S { background: var(--bad); }
+.prio-A { background: var(--soso); }
+.prio-B { background: #5b7fa6; }
+.prio-C { background: #b3b9b0; }
 .chip .cnt { color: var(--muted); font-size: 0.7rem; }
 
 .stats-line { margin: 14px 2px 0; font-size: 0.75rem; color: var(--muted); }
