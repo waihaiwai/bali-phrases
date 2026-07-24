@@ -321,7 +321,15 @@
 
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("sw.js").catch(() => {});
+      navigator.serviceWorker.register("sw.js").then(reg => reg.update()).catch(() => {});
+    });
+    // 新しいSWが有効化されたら即リロードして最新版を表示
+    let refreshing = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (!refreshing) {
+        refreshing = true;
+        location.reload();
+      }
     });
   }
 })();

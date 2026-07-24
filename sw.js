@@ -1,4 +1,4 @@
-const CACHE = "bali-phrases-v2";
+const CACHE = "bali-phrases-v3";
 const ASSETS = [
   "./",
   "./index.html",
@@ -12,7 +12,12 @@ const ASSETS = [
 ];
 
 self.addEventListener("install", e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
+  // no-cache: HTTPキャッシュを飛ばして必ずサーバの最新を取る
+  e.waitUntil(
+    caches.open(CACHE)
+      .then(c => c.addAll(ASSETS.map(u => new Request(u, { cache: "no-cache" }))))
+      .then(() => self.skipWaiting())
+  );
 });
 
 self.addEventListener("activate", e => {
@@ -29,7 +34,7 @@ self.addEventListener("fetch", e => {
   e.respondWith(
     caches.open(CACHE).then(async cache => {
       const cached = await cache.match(e.request, { ignoreSearch: true });
-      const network = fetch(e.request)
+      const network = fetch(new Request(e.request, { cache: "no-cache" }))
         .then(res => {
           if (res.ok && new URL(e.request.url).origin === location.origin) {
             cache.put(e.request, res.clone());
