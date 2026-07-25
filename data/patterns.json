@@ -6,8 +6,8 @@
   },
   "short-response": {
     "title": "短答リアクション",
-    "desc": "聞かれたら名詞や一言で即答してOK。無理に文を作らない。Sure / That's right / thanks を添えると感じ良く決まる。相手の質問に2秒で返すための土台。",
-    "examples": ["Five nights.", "Sure, here you go.", "We're from Japan."]
+    "desc": "聞かれたら名詞や一言で即答してOK。無理に文を作らない。Sure / That's right / thanks を添えると感じ良く決まる。相手の質問に2秒で返すための土台。落とし穴: Do you 〜? には Yes, we do. で受ける（Yes, I have. や Yes だけは×。Yes 単独だと会話が止まる）。",
+    "examples": ["Five nights.", "Sure, here you go.", "We're from Japan.", "Yes, we do."]
   },
   "could-i-get": {
     "title": "Could I get 〜?",
