@@ -2,7 +2,7 @@
   "noun-please": {
     "title": "〜, please（最短注文形）",
     "desc": "名詞（＋数量）に please を付けるだけの旅行最頻形。注文・支払い方法・行き先・メニュー選択、二択質問への答えまで全部これで返せる。Not too spicy, please. のように形容詞句にも応用可。推定で旅行中30回使う、文法ゼロのコスパ王。",
-    "examples": ["Two Bintangs, please.", "Card, please.", "Not too spicy, please.", "To the Ritz-Carlton in Nusa Dua, please."]
+    "examples": ["Two Bintangs, please.", "Card, please.", "The bill, please.", "A little softer, please.", "To the Ritz-Carlton in Nusa Dua, please."]
   },
   "short-response": {
     "title": "短答リアクション",
@@ -12,7 +12,7 @@
   "could-i-get": {
     "title": "Could I get 〜?",
     "desc": "依頼の万能形。物・サービスを丁寧にもらう。get の代わりに have でも同じ。末尾に please を付ければ十分丁寧。",
-    "examples": ["Could I get some water, please?", "Could I get the bill, please?"]
+    "examples": ["Could I get some water, please?", "Excuse me, could I get through?"]
   },
   "could-you": {
     "title": "Could you 〜?",
@@ -41,8 +41,8 @@
   },
   "would-it-be-okay": {
     "title": "Would it be okay if 〜?",
-    "desc": "丁寧な許可取り。if 節の中は過去形にするのがポイント。軽く言うなら Could we 〜? でも同じ役割。",
-    "examples": ["Would it be okay if we left our luggage here?", "Could we take a short break?"]
+    "desc": "許可取りは Could we 〜? が最短で十分丁寧。より丁寧なフル形が Would it be okay if 〜?（if 節は過去形）。",
+    "examples": ["Could we leave our luggage here?", "Could we check in early?", "Would it be okay if we left our luggage here?"]
   },
   "do-you-have": {
     "title": "Do you have 〜?",
@@ -66,7 +66,7 @@
   },
   "wh-question": {
     "title": "How much / How long / What time 〜?",
-    "desc": "疑問詞の定型3兄弟。値段は How much is 〜?、所要時間は How long does it take to 〜?、時刻は What time should we 〜?",
-    "examples": ["How much is this?", "How long does it take to the hotel?", "What time should we be in the lobby?"]
+    "desc": "疑問詞の定型3兄弟。値段は How much is 〜?、所要時間は How long to 〜?（does it take は省略可）、時刻は What time should we 〜?",
+    "examples": ["How much is this?", "How long to the hotel?", "What time should we be in the lobby?"]
   }
 }

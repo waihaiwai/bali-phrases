@@ -3,7 +3,7 @@
     "id": "ep01-flight-meal",
     "title": "機内食サービス",
     "file": "audio/ep01-flight-meal.mp3",
-    "duration": 155,
+    "duration": 154,
     "lines": 11
   },
   {
@@ -24,14 +24,14 @@
     "id": "ep04-pickup",
     "title": "空港送迎ピックアップ",
     "file": "audio/ep04-pickup.mp3",
-    "duration": 148,
+    "duration": 147,
     "lines": 12
   },
   {
     "id": "ep05-checkin",
     "title": "ホテルチェックイン",
     "file": "audio/ep05-checkin.mp3",
-    "duration": 193,
+    "duration": 190,
     "lines": 12
   },
   {
@@ -45,14 +45,14 @@
     "id": "ep07-restaurant",
     "title": "レストラン",
     "file": "audio/ep07-restaurant.mp3",
-    "duration": 176,
+    "duration": 174,
     "lines": 15
   },
   {
     "id": "ep08-spa",
     "title": "スパ",
     "file": "audio/ep08-spa.mp3",
-    "duration": 163,
+    "duration": 161,
     "lines": 11
   },
   {

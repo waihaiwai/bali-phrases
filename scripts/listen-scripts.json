@@ -5,7 +5,7 @@
     "intro": "エピソード1、機内食サービス。ガルーダ航空の機内で、食事と飲み物を受け取ります。まずは通しで聞いてみましょう。",
     "convo": [
       { "v": "staff", "en": "Good morning. We have chicken with rice or beef noodles today. Which would you like?" },
-      { "v": "you", "en": "I'll have the chicken, please." },
+      { "v": "you", "en": "The chicken, please." },
       { "v": "staff", "en": "Sure. Anything to drink?" },
       { "v": "you", "en": "Could I get a white wine and some water, please?" },
       { "v": "staff", "en": "Of course. Here you go." },
@@ -17,7 +17,7 @@
       { "v": "staff", "en": "Certainly, I'll bring one over." }
     ],
     "keys": [
-      { "en": "I'll have the chicken, please.", "ja": "チキンでお願いします" },
+      { "en": "The chicken, please.", "ja": "チキンでお願いします" },
       { "en": "Could I get a white wine and some water, please?", "ja": "白ワインとお水をもらえますか" },
       { "en": "Could I get another blanket?", "ja": "毛布をもう一枚もらえますか" }
     ]
@@ -66,7 +66,7 @@
     "title": "空港送迎ピックアップ",
     "intro": "エピソード4、空港からホテルへの送迎。ドライバーとの会話です。",
     "convo": [
-      { "v": "you", "en": "Hi, we have a pickup arranged under Tanaka." },
+      { "v": "you", "en": "Hi, we have a pickup under Tanaka." },
       { "v": "staff", "en": "Mr. Tanaka! Welcome to Bali. Let me help you with your luggage." },
       { "v": "you", "en": "Thank you very much." },
       { "v": "staff", "en": "How was your flight?" },
@@ -96,7 +96,7 @@
       { "v": "staff", "en": "You'll be staying five nights, is that right?" },
       { "v": "you", "en": "That's right. We also requested a room with two queen beds." },
       { "v": "staff", "en": "Let me check... yes, that's all arranged. Your room will be ready at three o'clock." },
-      { "v": "you", "en": "Okay. Would it be okay if we left our luggage here until then?" },
+      { "v": "you", "en": "Okay. Could we leave our luggage here until then?" },
       { "v": "staff", "en": "Of course. Please enjoy a welcome drink at the lounge, and feel free to use the pool." },
       { "v": "you", "en": "That sounds great, thank you." },
       { "v": "staff", "en": "And I see you're celebrating your anniversary. Congratulations!" },
@@ -105,7 +105,7 @@
     "keys": [
       { "en": "We have a reservation under Tanaka.", "ja": "タナカ名義で予約しています" },
       { "en": "We also requested a room with two queen beds.", "ja": "クイーンベッド2台の部屋もリクエストしていました" },
-      { "en": "Would it be okay if we left our luggage here?", "ja": "荷物をここに預けてもいいですか" }
+      { "en": "Could we leave our luggage here?", "ja": "荷物をここに預けてもいいですか" }
     ]
   },
   {
@@ -146,14 +146,14 @@
       { "v": "you", "en": "Not too spicy, please." },
       { "v": "staff", "en": "Not a problem at all." },
       { "v": "staff", "en": "How is everything?" },
-      { "v": "you", "en": "Everything's great, thank you. Could I get the bill, please?" },
+      { "v": "you", "en": "Everything's great, thank you. The bill, please." },
       { "v": "staff", "en": "Of course. Cash or card?" },
       { "v": "you", "en": "Card, please." }
     ],
     "keys": [
       { "en": "What do you recommend?", "ja": "おすすめは何ですか" },
       { "en": "Not too spicy, please.", "ja": "あまり辛くしないでください" },
-      { "en": "Could I get the bill, please?", "ja": "お会計をお願いします" }
+      { "en": "The bill, please.", "ja": "お会計をお願いします" }
     ]
   },
   {
@@ -167,7 +167,7 @@
       { "v": "you", "en": "Sure. Oh, is the sauna available before the treatment?" },
       { "v": "staff", "en": "Yes, feel free to use it. We'll come and get you at four." },
       { "v": "staff", "en": "How's the pressure?" },
-      { "v": "you", "en": "Could you go a little softer, please?" },
+      { "v": "you", "en": "A little softer, please." },
       { "v": "staff", "en": "Of course. Is the temperature okay?" },
       { "v": "you", "en": "It's perfect, thank you." },
       { "v": "staff", "en": "Here's some ginger tea. How do you feel?" },
@@ -176,7 +176,7 @@
     "keys": [
       { "en": "A massage for two at four, under Tanaka.", "ja": "16時からタナカ名義でマッサージ2名です" },
       { "en": "Is the sauna available before the treatment?", "ja": "施術前にサウナは使えますか" },
-      { "en": "Could you go a little softer, please?", "ja": "もう少し弱めでお願いします" }
+      { "en": "A little softer, please.", "ja": "もう少し弱めでお願いします" }
     ]
   },
   {
