@@ -229,6 +229,17 @@ main { padding: 0 14px 20px; max-width: 640px; margin: 0 auto; }
   font-size: 0.9rem;
 }
 .p-drill { margin-top: 10px; padding: 8px 16px; font-size: 0.8rem; }
+.mimic-btn {
+  margin-top: 10px;
+  border: 1px solid var(--accent);
+  background: none;
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  font-family: inherit;
+}
 
 /* ---- listen ---- */
 .ep-list { margin-top: 12px; }

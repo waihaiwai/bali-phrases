@@ -19,6 +19,20 @@ SLOW = "-25%"
 BYTES_PER_SEC = 6000  # 48kbps CBR
 
 _cache = {}
+_silence_cache = {}
+
+def silence(sec):
+    """リピート用の無音ギャップ（edge-ttsと同じ24kHz/48kbps monoで生成し結合互換にする）"""
+    if sec not in _silence_cache:
+        import lameenc
+        enc = lameenc.Encoder()
+        enc.set_bit_rate(48)
+        enc.set_in_sample_rate(24000)
+        enc.set_channels(1)
+        enc.set_quality(2)
+        pcm = b"\x00\x00" * int(24000 * sec)
+        _silence_cache[sec] = bytes(enc.encode(pcm)) + bytes(enc.flush())
+    return _silence_cache[sec]
 
 async def tts(text, voice, rate=None):
     key = (text, voice, rate)
@@ -44,11 +58,13 @@ async def build_episode(ep):
     await add(ep["intro"], VOICES["narrator"])
     for line in ep["convo"]:
         await add(line["en"], VOICES[line["v"]])
-    await add("キーフレーズを確認しましょう。", VOICES["narrator"])
+    await add("キーフレーズを確認しましょう。聞こえたら、続く間で真似して声に出してみてください。", VOICES["narrator"])
     for k in ep["keys"]:
         await add(k["en"], VOICES["you"], SLOW)
+        segs.append(silence(3))  # 真似して声に出すためのギャップ
         await add(k["ja"], VOICES["narrator"])
         await add(k["en"], VOICES["you"], SLOW)
+        segs.append(silence(3))
     await add("それでは、もう一度通しで聞いてみましょう。", VOICES["narrator"])
     for line in ep["convo"]:
         await add(line["en"], VOICES[line["v"]])

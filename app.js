@@ -68,6 +68,26 @@
     speechSynthesis.speak(u);
   }
 
+  // お手本→間→お手本… とリピート再生（真似して声に出す用）
+  function mimic(text, times = 3) {
+    if (!("speechSynthesis" in window)) return;
+    speechSynthesis.cancel();
+    let n = 0;
+    const go = () => {
+      const u = new SpeechSynthesisUtterance(text);
+      const v = pickVoice();
+      if (v) u.voice = v;
+      u.lang = "en-US";
+      u.rate = 0.9;
+      u.onend = () => {
+        n++;
+        if (n < times) setTimeout(go, 2600);
+      };
+      speechSynthesis.speak(u);
+    };
+    go();
+  }
+
   // ---------- helpers ----------
   function esc(s) {
     return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -207,6 +227,7 @@
               <div class="best">${esc(c.best)}</div>
               <button class="speak-btn">🔊</button>
             </div>
+            <button class="mimic-btn">🔁 まねる×3（お手本→自分の順で）</button>
             <div class="structure">${esc(c.structure)}</div>
             <details><summary>ニュアンス</summary><div class="nuance">${esc(c.nuance)}</div></details>
           </div>
@@ -241,6 +262,7 @@
       speak(c.best);
     });
     node.querySelector(".speak-btn").addEventListener("click", () => speak(c.best));
+    node.querySelector(".mimic-btn").addEventListener("click", () => mimic(c.best));
     const rate = r => {
       saveRating(c.id, r);
       p.results.push(r);
