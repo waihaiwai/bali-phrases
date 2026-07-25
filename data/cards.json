@@ -548,6 +548,20 @@
     "prio": "B"
   },
   {
+    "id": "dps-07",
+    "scene": "dps-arrival",
+    "cue": {
+      "en": "Do you have a return ticket?",
+      "ja": "帰りの航空券はお持ちですか？"
+    },
+    "ja": "はい、あります（画面を見せる）",
+    "best": "Yes, we do. Here it is.",
+    "structure": "Do you 〜? には do で返す — Yes, we do. / No, we don't. haveで受けて尻切れにしない",
+    "nuance": "Yes, I have. は日本人の定番ミス。見せながら Here it is. まで続けると会話が閉じる",
+    "pattern": "short-response",
+    "prio": "B"
+  },
+  {
     "id": "checkin-06",
     "scene": "hotel-checkin",
     "cue": {
