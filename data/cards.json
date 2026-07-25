@@ -559,7 +559,7 @@
     "structure": "Do you 〜? には do で返す — Yes, we do. / No, we don't. haveで受けて尻切れにしない",
     "nuance": "Yes, I have. は日本人の定番ミス。見せながら Here it is. まで続けると会話が閉じる",
     "pattern": "short-response",
-    "prio": "B"
+    "prio": "S"
   },
   {
     "id": "checkin-06",
@@ -601,7 +601,7 @@
     "structure": "What do you recommend? — 開かれた質問に迷ったときの万能の逃げ道。黙る・Thank youで流すより会話が続く",
     "nuance": "レストラン・スパ・ツアー、全シーン共通。選べるなら The rice terraces, please. と中身で返すのが第一候補",
     "pattern": "wh-question",
-    "prio": "A"
+    "prio": "S"
   },
   {
     "id": "concierge-07",
@@ -615,7 +615,7 @@
     "structure": "Shall I 〜? / Would you like me to 〜? の申し出には Yes, please. / No, thank you. の2択で返す",
     "nuance": "Of course. は「当然でしょ」に聞こえることがある。申し出への快諾は Yes, please. が鉄板",
     "pattern": "short-response",
-    "prio": "A"
+    "prio": "S"
   },
   {
     "id": "rest-05",
