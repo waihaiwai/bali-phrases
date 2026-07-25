@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ep01-flight-meal",
+    "title": "機内食サービス",
+    "file": "audio/ep01-flight-meal.mp3",
+    "duration": 132,
+    "lines": 11
+  },
+  {
+    "id": "ep02-announcements",
+    "title": "機内アナウンス聞き取り",
+    "file": "audio/ep02-announcements.mp3",
+    "duration": 152,
+    "lines": 3
+  },
+  {
+    "id": "ep03-immigration",
+    "title": "入国審査",
+    "file": "audio/ep03-immigration.mp3",
+    "duration": 114,
+    "lines": 12
+  },
+  {
+    "id": "ep04-pickup",
+    "title": "空港送迎ピックアップ",
+    "file": "audio/ep04-pickup.mp3",
+    "duration": 131,
+    "lines": 12
+  },
+  {
+    "id": "ep05-checkin",
+    "title": "ホテルチェックイン",
+    "file": "audio/ep05-checkin.mp3",
+    "duration": 170,
+    "lines": 12
+  },
+  {
+    "id": "ep06-pool",
+    "title": "プール・ビーチ",
+    "file": "audio/ep06-pool.mp3",
+    "duration": 125,
+    "lines": 9
+  },
+  {
+    "id": "ep07-restaurant",
+    "title": "レストラン",
+    "file": "audio/ep07-restaurant.mp3",
+    "duration": 153,
+    "lines": 15
+  },
+  {
+    "id": "ep08-spa",
+    "title": "スパ",
+    "file": "audio/ep08-spa.mp3",
+    "duration": 140,
+    "lines": 11
+  },
+  {
+    "id": "ep09-tour",
+    "title": "ウブド日帰りツアー",
+    "file": "audio/ep09-tour.mp3",
+    "duration": 148,
+    "lines": 8
+  },
+  {
+    "id": "ep10-checkout",
+    "title": "チェックアウト",
+    "file": "audio/ep10-checkout.mp3",
+    "duration": 144,
+    "lines": 12
+  }
+]

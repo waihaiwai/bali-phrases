@@ -1,0 +1,225 @@
+[
+  {
+    "id": "ep01-flight-meal",
+    "title": "機内食サービス",
+    "intro": "エピソード1、機内食サービス。ガルーダ航空の機内で、食事と飲み物を受け取ります。まずは通しで聞いてみましょう。",
+    "convo": [
+      { "v": "staff", "en": "Good morning. We have chicken with rice or beef noodles today. Which would you like?" },
+      { "v": "you", "en": "I'll have the chicken, please." },
+      { "v": "staff", "en": "Sure. Anything to drink?" },
+      { "v": "you", "en": "Could I get a white wine and some water, please?" },
+      { "v": "staff", "en": "Of course. Here you go." },
+      { "v": "you", "en": "Thank you." },
+      { "v": "staff", "en": "Would you like coffee or tea after your meal?" },
+      { "v": "you", "en": "Coffee, please. With milk." },
+      { "v": "staff", "en": "I'll bring it right away." },
+      { "v": "you", "en": "Thanks. Oh, and could I get another blanket? It's a bit chilly." },
+      { "v": "staff", "en": "Certainly, I'll bring one over." }
+    ],
+    "keys": [
+      { "en": "I'll have the chicken, please.", "ja": "チキンでお願いします" },
+      { "en": "Could I get a white wine and some water, please?", "ja": "白ワインとお水をもらえますか" },
+      { "en": "Could I get another blanket?", "ja": "毛布をもう一枚もらえますか" }
+    ]
+  },
+  {
+    "id": "ep02-announcements",
+    "title": "機内アナウンス聞き取り",
+    "intro": "エピソード2、機内アナウンス。これは話す練習ではなく、聞き取りの練習です。機長とキャビンアテンダントのアナウンスを聞いてみましょう。",
+    "convo": [
+      { "v": "you", "en": "Good morning, ladies and gentlemen. This is your captain speaking. Welcome aboard this flight to Singapore. Our flight time today will be approximately seven hours and thirty minutes, and we are expecting a smooth flight. Please sit back, relax, and enjoy the flight." },
+      { "v": "staff2", "en": "Ladies and gentlemen, we will shortly begin our meal service. Please return your seat to the upright position and open your tray table. Thank you." },
+      { "v": "staff2", "en": "Ladies and gentlemen, we are now beginning our descent into Singapore Changi Airport. Please fasten your seat belt and return your seat to the upright position. The local time is five fifty in the morning, and the ground temperature is twenty-seven degrees. Thank you." }
+    ],
+    "keys": [
+      { "en": "We are now beginning our descent.", "ja": "まもなく降下を開始します" },
+      { "en": "Please return your seat to the upright position.", "ja": "座席を元の位置にお戻しください" },
+      { "en": "The local time is five fifty in the morning.", "ja": "現地時刻は朝5時50分です" }
+    ]
+  },
+  {
+    "id": "ep03-immigration",
+    "title": "入国審査",
+    "intro": "エピソード3、デンパサール空港の入国審査。審査官の質問に短く答えていきます。",
+    "convo": [
+      { "v": "staff2", "en": "Next, please. Good afternoon. Passport, please." },
+      { "v": "you", "en": "Here you go." },
+      { "v": "staff2", "en": "What's the purpose of your visit?" },
+      { "v": "you", "en": "We're here on vacation." },
+      { "v": "staff2", "en": "How long are you staying?" },
+      { "v": "you", "en": "Five nights." },
+      { "v": "staff2", "en": "Where are you staying?" },
+      { "v": "you", "en": "We're staying at The Ritz-Carlton in Nusa Dua." },
+      { "v": "staff2", "en": "Do you have a return ticket?" },
+      { "v": "you", "en": "Yes, we fly back on the fourteenth." },
+      { "v": "staff2", "en": "All right. Enjoy your holiday." },
+      { "v": "you", "en": "Thank you." }
+    ],
+    "keys": [
+      { "en": "We're here on vacation.", "ja": "観光で来ました" },
+      { "en": "Five nights.", "ja": "5泊です" },
+      { "en": "We're staying at The Ritz-Carlton in Nusa Dua.", "ja": "ヌサドゥアのリッツ・カールトンに滞在します" }
+    ]
+  },
+  {
+    "id": "ep04-pickup",
+    "title": "空港送迎ピックアップ",
+    "intro": "エピソード4、空港からホテルへの送迎。ドライバーとの会話です。",
+    "convo": [
+      { "v": "you", "en": "Hi, we have a pickup arranged under Tanaka." },
+      { "v": "staff", "en": "Mr. Tanaka! Welcome to Bali. Let me help you with your luggage." },
+      { "v": "you", "en": "Thank you very much." },
+      { "v": "staff", "en": "How was your flight?" },
+      { "v": "you", "en": "Pretty good, but a little long." },
+      { "v": "staff", "en": "Is this your first time in Bali?" },
+      { "v": "you", "en": "Yes, first time. We're very excited." },
+      { "v": "staff", "en": "Wonderful. The hotel is about forty minutes from here." },
+      { "v": "you", "en": "I see. How's the traffic today?" },
+      { "v": "staff", "en": "Not too bad. If you need anything, just let me know." },
+      { "v": "you", "en": "Thanks. Could we stop at an ATM on the way?" },
+      { "v": "staff", "en": "Of course, no problem." }
+    ],
+    "keys": [
+      { "en": "Pretty good, but a little long.", "ja": "よかったけど、少し長かったです（フライトの感想）" },
+      { "en": "Could we stop at an ATM on the way?", "ja": "途中でATMに寄ってもらえますか" }
+    ]
+  },
+  {
+    "id": "ep05-checkin",
+    "title": "ホテルチェックイン",
+    "intro": "エピソード5、リッツ・カールトンのチェックイン。予約の提示から荷物預けまでの一連の流れです。",
+    "convo": [
+      { "v": "staff", "en": "Good afternoon. Welcome to The Ritz-Carlton. Are you checking in?" },
+      { "v": "you", "en": "Yes. We have a reservation under Tanaka." },
+      { "v": "staff", "en": "Thank you, Mr. Tanaka. May I see your passport, please?" },
+      { "v": "you", "en": "Sure, here you go." },
+      { "v": "staff", "en": "You'll be staying five nights, is that right?" },
+      { "v": "you", "en": "That's right. We also requested a room with two queen beds." },
+      { "v": "staff", "en": "Let me check... yes, that's all arranged. Your room will be ready at three o'clock." },
+      { "v": "you", "en": "Okay. Would it be okay if we left our luggage here until then?" },
+      { "v": "staff", "en": "Of course. Please enjoy a welcome drink at the lounge, and feel free to use the pool." },
+      { "v": "you", "en": "That sounds great, thank you." },
+      { "v": "staff", "en": "And I see you're celebrating your anniversary. Congratulations!" },
+      { "v": "you", "en": "Thank you! We're really looking forward to our stay." }
+    ],
+    "keys": [
+      { "en": "We have a reservation under Tanaka.", "ja": "タナカ名義で予約しています" },
+      { "en": "We also requested a room with two queen beds.", "ja": "クイーンベッド2台の部屋もリクエストしていました" },
+      { "en": "Would it be okay if we left our luggage here?", "ja": "荷物をここに預けてもいいですか" }
+    ]
+  },
+  {
+    "id": "ep06-pool",
+    "title": "プール・ビーチ",
+    "intro": "エピソード6、ホテルのプールサイド。タオルを借りて、ドリンクを部屋付けで注文します。",
+    "convo": [
+      { "v": "staff", "en": "Good morning. Would you like some towels?" },
+      { "v": "you", "en": "Yes, two please. Could we get a parasol as well?" },
+      { "v": "staff", "en": "Of course. This way, please. Here you are." },
+      { "v": "you", "en": "Perfect. Could I order some drinks here?" },
+      { "v": "staff", "en": "Yes, just wave at any of the staff. Today's special is fresh coconut." },
+      { "v": "you", "en": "Nice. Two coconuts, please." },
+      { "v": "staff", "en": "Would you like to charge it to your room?" },
+      { "v": "you", "en": "Yes, room five twelve, please." },
+      { "v": "staff", "en": "Great. I'll be right back." }
+    ],
+    "keys": [
+      { "en": "Could we get a parasol as well?", "ja": "パラソルもお願いできますか" },
+      { "en": "Two coconuts, please.", "ja": "ココナッツを2つください" },
+      { "en": "Room five twelve, please.", "ja": "512号室でお願いします（部屋付け）" }
+    ]
+  },
+  {
+    "id": "ep07-restaurant",
+    "title": "レストラン",
+    "intro": "エピソード7、レストラン。入店から注文、会計までの一連の流れです。おすすめの聞き方に注目してください。",
+    "convo": [
+      { "v": "staff", "en": "Good evening. How many?" },
+      { "v": "you", "en": "Do you have a table for two?" },
+      { "v": "staff", "en": "Of course, right this way. Here are your menus. Anything to drink?" },
+      { "v": "you", "en": "Two Bintangs, please." },
+      { "v": "staff", "en": "Are you ready to order?" },
+      { "v": "you", "en": "What do you recommend?" },
+      { "v": "staff", "en": "The grilled seafood platter is very popular. It comes with rice and vegetables." },
+      { "v": "you", "en": "Sounds good. We'll have that, and one nasi goreng, please." },
+      { "v": "staff", "en": "Excellent choice. Anything else?" },
+      { "v": "you", "en": "Could you make it not too spicy?" },
+      { "v": "staff", "en": "Not a problem at all." },
+      { "v": "staff", "en": "How is everything?" },
+      { "v": "you", "en": "Everything's great, thank you. Could I get the bill, please?" },
+      { "v": "staff", "en": "Of course. Cash or card?" },
+      { "v": "you", "en": "Card, please." }
+    ],
+    "keys": [
+      { "en": "What do you recommend?", "ja": "おすすめは何ですか" },
+      { "en": "Could you make it not too spicy?", "ja": "あまり辛くしないでもらえますか" },
+      { "en": "Could I get the bill, please?", "ja": "お会計をお願いします" }
+    ]
+  },
+  {
+    "id": "ep08-spa",
+    "title": "スパ",
+    "intro": "エピソード8、ホテルのスパ。受付から施術中の強さの調整までの会話です。",
+    "convo": [
+      { "v": "staff", "en": "Good afternoon. Do you have a reservation?" },
+      { "v": "you", "en": "Yes, a massage for two at four, under Tanaka." },
+      { "v": "staff", "en": "Welcome. Please change into these robes and fill out this form." },
+      { "v": "you", "en": "Sure. Oh, is the sauna available before the treatment?" },
+      { "v": "staff", "en": "Yes, feel free to use it. We'll come and get you at four." },
+      { "v": "staff", "en": "How's the pressure?" },
+      { "v": "you", "en": "Could you go a little softer, please?" },
+      { "v": "staff", "en": "Of course. Is the temperature okay?" },
+      { "v": "you", "en": "It's perfect, thank you." },
+      { "v": "staff", "en": "Here's some ginger tea. How do you feel?" },
+      { "v": "you", "en": "That was amazing. Thank you so much." }
+    ],
+    "keys": [
+      { "en": "A massage for two at four, under Tanaka.", "ja": "16時からタナカ名義でマッサージ2名です" },
+      { "en": "Is the sauna available before the treatment?", "ja": "施術前にサウナは使えますか" },
+      { "en": "Could you go a little softer, please?", "ja": "もう少し弱めでお願いします" }
+    ]
+  },
+  {
+    "id": "ep09-tour",
+    "title": "ウブド日帰りツアー",
+    "intro": "エピソード9、ウブド方面への日帰りチャーター。ドライバーガイドの説明を聞き取るのがポイントです。",
+    "convo": [
+      { "v": "staff", "en": "Good morning! Ready for Ubud? Today we'll visit the rice terraces first, then a coffee plantation, and the Monkey Forest in the afternoon." },
+      { "v": "you", "en": "Sounds great. How long is the drive?" },
+      { "v": "staff", "en": "About ninety minutes. The terraces are beautiful in the morning light. Oh, and keep your bags closed at the Monkey Forest. The monkeys love to grab things." },
+      { "v": "you", "en": "Good to know! Could we stop somewhere for lunch with a view?" },
+      { "v": "staff", "en": "Of course. I know a place overlooking the valley. Local food, very fresh." },
+      { "v": "you", "en": "Perfect. And what time should we head back?" },
+      { "v": "staff", "en": "If we leave Ubud by four, we'll beat the traffic." },
+      { "v": "you", "en": "Okay, let's do that." }
+    ],
+    "keys": [
+      { "en": "How long is the drive?", "ja": "車でどのくらいかかりますか" },
+      { "en": "Could we stop somewhere for lunch with a view?", "ja": "景色のいいところでランチに寄れますか" },
+      { "en": "What time should we head back?", "ja": "何時に戻り始めればいいですか" }
+    ]
+  },
+  {
+    "id": "ep10-checkout",
+    "title": "チェックアウト",
+    "intro": "エピソード10、チェックアウト。精算、荷物預け、タクシー手配までの最後の流れです。",
+    "convo": [
+      { "v": "staff", "en": "Good morning. How can I help you?" },
+      { "v": "you", "en": "We'd like to check out, please." },
+      { "v": "staff", "en": "Certainly. How was your stay?" },
+      { "v": "you", "en": "It was wonderful. Thank you for everything." },
+      { "v": "staff", "en": "I'm so glad to hear that. Here's your bill. The minibar and the spa are included." },
+      { "v": "you", "en": "Everything looks good. Could you charge it to this card?" },
+      { "v": "staff", "en": "Of course. Here's your receipt." },
+      { "v": "you", "en": "Could we leave our bags here after checkout? Our taxi is at noon." },
+      { "v": "staff", "en": "Absolutely. We'll keep them at the bell desk." },
+      { "v": "you", "en": "And could you get us a taxi to the airport for noon?" },
+      { "v": "staff", "en": "It's already arranged, Mr. Tanaka. We hope to see you again." },
+      { "v": "you", "en": "Definitely. Thank you for everything!" }
+    ],
+    "keys": [
+      { "en": "Could you charge it to this card?", "ja": "このカードで精算をお願いします" },
+      { "en": "Could we leave our bags here after checkout?", "ja": "チェックアウト後も荷物を預かってもらえますか" }
+    ]
+  }
+]

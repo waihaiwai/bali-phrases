@@ -230,6 +230,39 @@ main { padding: 0 14px 20px; max-width: 640px; margin: 0 auto; }
 }
 .p-drill { margin-top: 10px; padding: 8px 16px; font-size: 0.8rem; }
 
+/* ---- listen ---- */
+.ep-list { margin-top: 12px; }
+.ep-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 13px 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+}
+.ep-item.playing { border-color: var(--accent); background: var(--accent-soft); }
+.ep-btn {
+  width: 38px; height: 38px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+.ep-info { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.ep-title { font-weight: 700; font-size: 0.92rem; color: var(--ink); }
+.ep-time { font-size: 0.72rem; color: var(--muted); }
+.ep-num { font-size: 0.72rem; color: var(--muted); }
+
 .big-btn {
   width: 100%;
   border: none;

@@ -8,6 +8,7 @@
     cards: [],
     patterns: {},
     dialogs: [],
+    episodes: [],
     tab: "list",
     practice: null, // { queue, index, revealed, sceneId }
     ratings: loadRatings(),
@@ -368,6 +369,120 @@
     advance();
   }
 
+  // ---------- listen view ----------
+  const player = { audio: null, idx: -1, rate: 1.0 };
+
+  function fmtDur(s) {
+    return `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+  }
+
+  function ensureAudio() {
+    if (!player.audio) {
+      const a = new Audio();
+      a.preload = "none";
+      a.addEventListener("ended", () => playEpisode(player.idx + 1));
+      a.addEventListener("timeupdate", updateNowPlaying);
+      player.audio = a;
+    }
+    return player.audio;
+  }
+
+  function playEpisode(i) {
+    if (i < 0 || i >= state.episodes.length) {
+      stopEpisode();
+      return;
+    }
+    const ep = state.episodes[i];
+    const a = ensureAudio();
+    player.idx = i;
+    a.src = ep.file;
+    a.playbackRate = player.rate;
+    a.play();
+    if ("mediaSession" in navigator) {
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: ep.title,
+        artist: "Bali Phrases",
+        album: "バリ英会話リスニング",
+      });
+      navigator.mediaSession.setActionHandler("play", () => a.play());
+      navigator.mediaSession.setActionHandler("pause", () => a.pause());
+      navigator.mediaSession.setActionHandler("previoustrack", () => playEpisode(player.idx - 1));
+      navigator.mediaSession.setActionHandler("nexttrack", () => playEpisode(player.idx + 1));
+    }
+    if (state.tab === "listen") renderListen();
+  }
+
+  function stopEpisode() {
+    if (player.audio) {
+      player.audio.pause();
+      player.audio.removeAttribute("src");
+    }
+    player.idx = -1;
+    if (state.tab === "listen") renderListen();
+  }
+
+  function updateNowPlaying() {
+    const elp = document.querySelector(".ep-item.playing .ep-time");
+    if (elp && player.audio && !isNaN(player.audio.currentTime)) {
+      const ep = state.episodes[player.idx];
+      elp.textContent = `${fmtDur(player.audio.currentTime)} / ${fmtDur(ep.duration)}`;
+    }
+  }
+
+  function renderListen() {
+    $view.innerHTML = "";
+    const total = state.episodes.reduce((s, e) => s + e.duration, 0);
+    const wrap = el(`
+      <div class="practice-setup">
+        <h2>🎧 移動中リスニング — 全${state.episodes.length}話 / 約${Math.round(total / 60)}分</h2>
+        <p class="stats-line" style="margin:0 2px 10px">通し会話 → キーフレーズ（ゆっくり＋訳）→ もう一度通し、の構成。
+        再生中は画面を消してもOK。1話終わると自動で次に進むよ</p>
+        <div class="chip-row speed-row"></div>
+        <div class="ep-list"></div>
+      </div>`);
+
+    const speeds = [0.8, 1.0, 1.25];
+    const speedRow = wrap.querySelector(".speed-row");
+    speeds.forEach(r => {
+      const b = el(`<button class="chip ${player.rate === r ? "inst" : ""}">${r}x</button>`);
+      b.addEventListener("click", () => {
+        player.rate = r;
+        if (player.audio) player.audio.playbackRate = r;
+        renderListen();
+      });
+      speedRow.appendChild(b);
+    });
+
+    const list = wrap.querySelector(".ep-list");
+    if (!state.episodes.length) {
+      list.appendChild(el(`<p class="stats-line">エピソードがまだないよ</p>`));
+    }
+    state.episodes.forEach((ep, i) => {
+      const playing = i === player.idx && player.audio && !player.audio.paused;
+      const current = i === player.idx;
+      const item = el(`
+        <button class="ep-item ${current ? "playing" : ""}">
+          <span class="ep-btn">${playing ? "⏸" : "▶"}</span>
+          <span class="ep-info">
+            <span class="ep-title">${esc(ep.title)}</span>
+            <span class="ep-time">${current && player.audio ? fmtDur(player.audio.currentTime) + " / " : ""}${fmtDur(ep.duration)}</span>
+          </span>
+          <span class="ep-num">${i + 1}</span>
+        </button>`);
+      item.addEventListener("click", () => {
+        if (current && player.audio) {
+          if (player.audio.paused) player.audio.play();
+          else player.audio.pause();
+          renderListen();
+        } else {
+          playEpisode(i);
+        }
+      });
+      list.appendChild(item);
+    });
+    $view.appendChild(wrap);
+  }
+
   // ---------- patterns view ----------
   function showPatterns(focusKey) {
     setTab("patterns");
@@ -424,6 +539,7 @@
     if (tab === "list") renderList();
     else if (tab === "practice") renderPracticeSetup();
     else if (tab === "roleplay") renderRoleplayList();
+    else if (tab === "listen") renderListen();
     else renderPatterns();
     window.scrollTo(0, 0);
   }
@@ -434,16 +550,18 @@
   // ---------- boot ----------
   async function boot() {
     try {
-      const [scenes, cards, patterns, dialogs] = await Promise.all([
+      const [scenes, cards, patterns, dialogs, episodes] = await Promise.all([
         fetch("data/scenes.json").then(r => r.json()),
         fetch("data/cards.json").then(r => r.json()),
         fetch("data/patterns.json").then(r => r.json()),
         fetch("data/dialogs.json").then(r => r.json()),
+        fetch("data/episodes.json").then(r => r.json()).catch(() => []),
       ]);
       state.scenes = scenes;
       state.cards = cards;
       state.patterns = patterns;
       state.dialogs = dialogs;
+      state.episodes = episodes;
       setTab("list");
     } catch (e) {
       $view.innerHTML = `<p style="padding:20px;color:#d05446">データの読み込みに失敗: ${esc(e.message)}</p>`;

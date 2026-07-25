@@ -1,4 +1,4 @@
-const CACHE = "bali-phrases-v6";
+const CACHE = "bali-phrases-v7";
 const ASSETS = [
   "./",
   "./index.html",
@@ -10,6 +10,17 @@ const ASSETS = [
   "./data/cards.json",
   "./data/patterns.json",
   "./data/dialogs.json",
+  "./data/episodes.json",
+  "./audio/ep01-flight-meal.mp3",
+  "./audio/ep02-announcements.mp3",
+  "./audio/ep03-immigration.mp3",
+  "./audio/ep04-pickup.mp3",
+  "./audio/ep05-checkin.mp3",
+  "./audio/ep06-pool.mp3",
+  "./audio/ep07-restaurant.mp3",
+  "./audio/ep08-spa.mp3",
+  "./audio/ep09-tour.mp3",
+  "./audio/ep10-checkout.mp3",
 ];
 
 self.addEventListener("install", e => {
