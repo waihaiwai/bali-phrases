@@ -172,6 +172,7 @@
     let pool;
     if (sceneId === "weak") pool = state.cards.filter(c => isWeak(c.id));
     else if (sceneId === "instant") pool = state.cards.filter(c => c.prio === "S" || c.prio === "A");
+    else if (sceneId && sceneId.startsWith("pattern:")) pool = state.cards.filter(c => c.pattern === sceneId.slice(8));
     else if (sceneId) pool = cardsOf(sceneId);
     else pool = state.cards.slice();
     // weak-first weighted order with random tiebreak
@@ -199,6 +200,7 @@
           ${c.cue ? `<button class="cue"><span class="cue-en">“${esc(c.cue.en)}”</span><span class="cue-ja">${esc(c.cue.ja)}</span></button>` : ""}
           <div class="prompt">${esc(c.ja)}</div>
           <div class="hint">${c.cue ? "相手にこう言われた。すぐ声に出して返そう" : "まず声に出して言ってみよう"}</div>
+          <button class="stem-btn">💡 出だしだけ見る</button>
           <div class="answer" hidden>
             <div class="best-row">
               <div class="best">${esc(c.best)}</div>
@@ -223,6 +225,14 @@
     const cueBtn = node.querySelector(".cue");
     if (cueBtn) cueBtn.addEventListener("click", () => speak(c.cue.en));
     if (c.cue) speak(c.cue.en); // 相手のセリフを自動再生 — 本番と同じく耳から始める
+    const stemBtn = node.querySelector(".stem-btn");
+    stemBtn.addEventListener("click", () => {
+      const words = c.best.split(" ");
+      const n = Math.min(Math.max(2, Math.ceil(words.length * 0.4)), 4);
+      stemBtn.textContent = words.slice(0, n).join(" ") + " …";
+      stemBtn.classList.add("revealed");
+      stemBtn.disabled = true;
+    });
     revealBtn.addEventListener("click", () => {
       answer.hidden = false;
       revealBtn.hidden = true;
@@ -387,6 +397,18 @@
         li.style.cursor = "pointer";
         li.addEventListener("click", () => speak(p.examples[i]));
       });
+      if (count > 0) {
+        const drill = el(`<button class="ghost-btn p-drill">この文型でドリル ▶</button>`);
+        drill.addEventListener("click", () => {
+          document.querySelectorAll(".tabbar button").forEach(b => {
+            b.classList.toggle("active", b.dataset.tab === "practice");
+          });
+          state.tab = "practice";
+          startPractice("pattern:" + key);
+          window.scrollTo(0, 0);
+        });
+        node.appendChild(drill);
+      }
       wrap.appendChild(node);
     });
     $view.appendChild(wrap);
