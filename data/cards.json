@@ -590,6 +590,34 @@
     "prio": "A"
   },
   {
+    "id": "concierge-06",
+    "scene": "concierge",
+    "cue": {
+      "en": "What would you like to see in Ubud?",
+      "ja": "ウブドでは何をご覧になりたいですか？"
+    },
+    "ja": "（選択肢を並べられて迷った）おすすめは何ですか？",
+    "best": "What do you recommend?",
+    "structure": "What do you recommend? — 開かれた質問に迷ったときの万能の逃げ道。黙る・Thank youで流すより会話が続く",
+    "nuance": "レストラン・スパ・ツアー、全シーン共通。選べるなら The rice terraces, please. と中身で返すのが第一候補",
+    "pattern": "wh-question",
+    "prio": "A"
+  },
+  {
+    "id": "concierge-07",
+    "scene": "concierge",
+    "cue": {
+      "en": "Shall I charge it to your room?",
+      "ja": "お部屋付けにいたしましょうか？"
+    },
+    "ja": "はい、お願いします",
+    "best": "Yes, please.",
+    "structure": "Shall I 〜? / Would you like me to 〜? の申し出には Yes, please. / No, thank you. の2択で返す",
+    "nuance": "Of course. は「当然でしょ」に聞こえることがある。申し出への快諾は Yes, please. が鉄板",
+    "pattern": "short-response",
+    "prio": "A"
+  },
+  {
     "id": "rest-05",
     "scene": "restaurant",
     "cue": {
