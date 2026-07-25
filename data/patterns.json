@@ -1,8 +1,8 @@
 {
   "noun-please": {
     "title": "〜, please（最短注文形）",
-    "desc": "名詞（＋数量）に please を付けるだけの旅行最頻形。注文・支払い方法・行き先・メニュー選択、二択質問への答えまで全部これで返せる。推定で旅行中30回使う、文法ゼロのコスパ王。",
-    "examples": ["Two Bintangs, please.", "Card, please.", "To the Ritz-Carlton in Nusa Dua, please."]
+    "desc": "名詞（＋数量）に please を付けるだけの旅行最頻形。注文・支払い方法・行き先・メニュー選択、二択質問への答えまで全部これで返せる。Not too spicy, please. のように形容詞句にも応用可。推定で旅行中30回使う、文法ゼロのコスパ王。",
+    "examples": ["Two Bintangs, please.", "Card, please.", "Not too spicy, please.", "To the Ritz-Carlton in Nusa Dua, please."]
   },
   "short-response": {
     "title": "短答リアクション",

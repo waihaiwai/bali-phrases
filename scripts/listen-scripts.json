@@ -143,7 +143,7 @@
       { "v": "staff", "en": "The grilled seafood platter is very popular. It comes with rice and vegetables." },
       { "v": "you", "en": "Sounds good. We'll have that, and one nasi goreng, please." },
       { "v": "staff", "en": "Excellent choice. Anything else?" },
-      { "v": "you", "en": "Could you make it not too spicy?" },
+      { "v": "you", "en": "Not too spicy, please." },
       { "v": "staff", "en": "Not a problem at all." },
       { "v": "staff", "en": "How is everything?" },
       { "v": "you", "en": "Everything's great, thank you. Could I get the bill, please?" },
@@ -152,7 +152,7 @@
     ],
     "keys": [
       { "en": "What do you recommend?", "ja": "おすすめは何ですか" },
-      { "en": "Could you make it not too spicy?", "ja": "あまり辛くしないでもらえますか" },
+      { "en": "Not too spicy, please.", "ja": "あまり辛くしないでください" },
       { "en": "Could I get the bill, please?", "ja": "お会計をお願いします" }
     ]
   },

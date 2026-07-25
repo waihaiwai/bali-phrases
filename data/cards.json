@@ -258,11 +258,11 @@
   {
     "id": "rest-02",
     "scene": "restaurant",
-    "ja": "あまり辛くしないでもらえますか",
-    "best": "Could you make it not too spicy?",
-    "structure": "Could you make it + 状態 — 料理の仕上がりを頼む形。make it mild でも同じ",
-    "nuance": "バリ料理はサンバルが辛いことがある。注文時に言うのが確実",
-    "pattern": "could-you",
+    "ja": "（注文に添えて）あまり辛くしないでください",
+    "best": "Not too spicy, please.",
+    "structure": "Not too + 形容詞, please — 注文にそのまま添える省略形。文を組み立てない方が速い。sweet / salty / cold にも応用",
+    "nuance": "フルで言うなら Could you make it not too spicy? バリ料理はサンバルが辛いので注文時に言うのが確実",
+    "pattern": "noun-please",
     "prio": "A"
   },
   {

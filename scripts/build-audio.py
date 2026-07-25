@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """listen-scripts.json から MP3 エピソードを生成する。
-使い方: python scripts/build-audio.py
+使い方: python scripts/build-audio.py [ep-id ...]
+  引数なし: 全エピソード生成 / 引数あり: 指定IDのみ再生成（他は既存ファイルを保持）
 出力: audio/<id>.mp3 と data/episodes.json
 同一ビットレートCBRのセグメントをバイナリ結合する（ブラウザ再生は問題なし）。
 """
@@ -75,12 +76,17 @@ async def main():
     with open(os.path.join(ROOT, "scripts", "listen-scripts.json"), encoding="utf-8") as f:
         episodes = json.load(f)
     os.makedirs(os.path.join(ROOT, "audio"), exist_ok=True)
+    only = set(sys.argv[1:])
     meta = []
     for i, ep in enumerate(episodes, 1):
-        data = await build_episode(ep)
         path = os.path.join(ROOT, "audio", ep["id"] + ".mp3")
-        with open(path, "wb") as f:
-            f.write(data)
+        if only and ep["id"] not in only and os.path.exists(path):
+            with open(path, "rb") as f:
+                data = f.read()  # 既存ファイルを保持してメタだけ再計算
+        else:
+            data = await build_episode(ep)
+            with open(path, "wb") as f:
+                f.write(data)
         dur = round(len(data) / BYTES_PER_SEC)
         meta.append({
             "id": ep["id"],
