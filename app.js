@@ -104,6 +104,7 @@
   // ---------- list view ----------
   function renderList() {
     $view.innerHTML = "";
+    $view.appendChild(el(`<p class="kana-legend">発音カナ: <b>カタカナ=強く</b>・ひらがな=弱く短く。音の連結を反映（Could I ＝くだい）</p>`));
     state.scenes.forEach(scene => {
       const cards = cardsOf(scene.id);
       const block = el(`
@@ -137,6 +138,7 @@
           <div class="best">${esc(c.best)}</div>
           <button class="speak-btn" aria-label="読み上げ">🔊</button>
         </div>
+        ${c.kana ? `<div class="kana">${esc(c.kana)}</div>` : ""}
         <div class="structure">${esc(c.structure)}</div>
         <details>
           <summary>ニュアンス</summary>
@@ -227,6 +229,7 @@
               <div class="best">${esc(c.best)}</div>
               <button class="speak-btn">🔊</button>
             </div>
+            ${c.kana ? `<div class="kana">${esc(c.kana)}</div>` : ""}
             <button class="mimic-btn">🔁 まねる×3（お手本→自分の順で）</button>
             <div class="structure">${esc(c.structure)}</div>
             <details><summary>ニュアンス</summary><div class="nuance">${esc(c.nuance)}</div></details>
