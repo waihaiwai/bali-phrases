@@ -660,6 +660,16 @@
     "prio": "S"
   },
   {
+    "id": "grab-06",
+    "scene": "grab",
+    "ja": "（車内で）途中でATMに寄ってもらえますか",
+    "best": "Could we stop at an ATM on the way?",
+    "structure": "Could we stop at + 場所 + on the way — 「途中で寄る」の定番。minimart / pharmacy にも応用",
+    "nuance": "I'd like to get cash. だと意図は伝わるが行動の依頼まで言う方が速い。ウルワツ等の入場料は現金のみ",
+    "pattern": "would-it-be-okay",
+    "prio": "A"
+  },
+  {
     "id": "grab-05",
     "scene": "grab",
     "cue": {
