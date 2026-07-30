@@ -521,9 +521,38 @@
     }
   }
 
+  // フレーズに出てくる単語の逆引きインデックス（単語帳ではない: 単語→フレーズの参照のみ）
+  const STOPWORDS = new Set(("a an the to for of in on at by i we you it this that these those is are was were be been " +
+    "do does did have has had could would should can may might will shall please me us our my your his her " +
+    "and or but not no yes some any there here what where when how much long time o'clock " +
+    "i'd i've i'm we're we'd we'll how's where's what's there's that's you're isn't don't everything's it's").split(" "));
+
+  function buildWordIndex() {
+    const map = new Map();
+    state.cards.forEach(c => {
+      const words = c.best.toLowerCase().replace(/[^a-z'\- ]/g, " ").split(/\s+/).filter(Boolean);
+      new Set(words).forEach(w => {
+        const base = w.replace(/^'+|'+$/g, "");
+        if (!base || base.length < 2 || STOPWORDS.has(base)) return;
+        if (!map.has(base)) map.set(base, []);
+        map.get(base).push(c);
+      });
+    });
+    return [...map.entries()].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
+  }
+
   function renderPatterns() {
     $view.innerHTML = "";
-    const wrap = el(`<div class="patterns-view"><h2>シーン横断の文型パターン</h2></div>`);
+    const wrap = el(`
+      <div class="patterns-view">
+        <div class="layer-intro">
+          <b>Kazu式・学びの3層構造</b><br>
+          ① <b>フレーズ</b> — 一覧・練習・聞くで、まねて暗記（主役）<br>
+          ② <b>文法</b> — 下の文型で「なぜこの形か」を後から理解<br>
+          ③ <b>単語</b> — フレーズから自然に身につく。最下部の逆引きで確認
+        </div>
+        <h2>② 文法 — シーン横断の文型パターン</h2>
+      </div>`);
     Object.entries(state.patterns).forEach(([key, p]) => {
       const count = state.cards.filter(c => c.pattern === key).length;
       const node = el(`
@@ -531,6 +560,7 @@
           <h3>${esc(p.title)}</h3>
           <div class="p-desc">${esc(p.desc)}</div>
           <ul>${p.examples.map(e => `<li>${esc(e)}</li>`).join("")}</ul>
+          ${p.grammar ? `<details class="p-grammar"><summary>文法の理屈</summary><div>${esc(p.grammar)}</div></details>` : ""}
           <div class="p-count">使うカード: ${count}枚</div>
         </article>`);
       node.querySelectorAll("li").forEach((li, i) => {
@@ -551,6 +581,28 @@
       }
       wrap.appendChild(node);
     });
+
+    // ③ 単語逆引き
+    const idx = buildWordIndex();
+    wrap.appendChild(el(`<h2 style="margin-top:20px">③ 単語 — フレーズ逆引き（${idx.length}語）</h2>
+      `));
+    wrap.appendChild(el(`<p class="kana-legend">単語は暗記しない。「どのフレーズで使ったか」で思い出す。タップでフレーズを表示</p>`));
+    const wordList = el(`<div></div>`);
+    idx.forEach(([word, cards]) => {
+      const d = el(`
+        <details class="w-item">
+          <summary><b>${esc(word)}</b><span class="w-cnt">${cards.length}</span></summary>
+          <div class="w-phrases"></div>
+        </details>`);
+      const holder = d.querySelector(".w-phrases");
+      cards.forEach(c => {
+        const row = el(`<button class="w-phrase">${esc(c.best)}<span>${esc(c.ja)}</span></button>`);
+        row.addEventListener("click", () => speak(c.best));
+        holder.appendChild(row);
+      });
+      wordList.appendChild(d);
+    });
+    wrap.appendChild(wordList);
     $view.appendChild(wrap);
   }
 

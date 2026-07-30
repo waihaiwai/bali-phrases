@@ -348,6 +348,47 @@ main { padding: 0 14px 20px; max-width: 640px; margin: 0 auto; }
 .pattern-card li::before { content: "“"; color: var(--muted); }
 .pattern-card li::after { content: "”"; color: var(--muted); }
 .pattern-card .p-count { font-size: 0.7rem; color: var(--muted); margin-top: 8px; }
+.p-grammar { margin-top: 8px; }
+.p-grammar summary { font-size: 0.72rem; color: var(--muted); cursor: pointer; list-style: none; }
+.p-grammar summary::before { content: "▸ "; }
+.p-grammar[open] summary::before { content: "▾ "; }
+.p-grammar div { font-size: 0.78rem; line-height: 1.6; color: var(--ink); background: var(--accent-soft); border-radius: 8px; padding: 7px 10px; margin-top: 5px; }
+
+.layer-intro {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  font-size: 0.78rem;
+  line-height: 1.9;
+  margin: 10px 0 14px;
+  color: var(--ink);
+}
+
+.w-item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 9px 12px;
+  margin-bottom: 6px;
+}
+.w-item summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+.w-item .w-cnt { font-size: 0.68rem; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 1px 8px; }
+.w-phrases { margin-top: 8px; display: flex; flex-direction: column; gap: 5px; }
+.w-phrase {
+  text-align: left;
+  border: none;
+  background: var(--bg);
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--ink);
+}
+.w-phrase span { display: block; font-weight: 400; font-size: 0.7rem; color: var(--muted); margin-top: 1px; }
 .highlight { outline: 2px solid var(--accent); }
 
 /* ---- roleplay ---- */

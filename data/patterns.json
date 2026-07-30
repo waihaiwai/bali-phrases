@@ -2,71 +2,133 @@
   "noun-please": {
     "title": "〜, please（最短注文形）",
     "desc": "名詞（＋数量）に please を付けるだけの旅行最頻形。注文・支払い方法・行き先・メニュー選択、二択質問への答えまで全部これで返せる。Not too spicy, please. のように形容詞句にも応用可。推定で旅行中30回使う、文法ゼロのコスパ王。",
-    "examples": ["Two Bintangs, please.", "Card, please.", "The bill, please.", "A little softer, please.", "To the Ritz-Carlton in Nusa Dua, please."]
+    "examples": [
+      "Two Bintangs, please.",
+      "Card, please.",
+      "The bill, please.",
+      "A little softer, please.",
+      "To the Ritz-Carlton in Nusa Dua, please."
+    ],
+    "grammar": "文法ゼロで成立する理由: 英語は文脈が動詞を補う言語。目的語＋please だけで依頼文として完結し、please が丁寧さを担保する"
   },
   "short-response": {
     "title": "短答リアクション",
     "desc": "聞かれたら名詞や一言で即答してOK。無理に文を作らない。Sure / That's right / thanks を添えると感じ良く決まる。相手の質問に2秒で返すための土台。落とし穴: Do you 〜? には Yes, we do. で受ける（Yes, I have. や Yes だけは×。Yes 単独だと会話が止まる）。",
-    "examples": ["Five nights.", "Sure, here you go.", "We're from Japan.", "Yes, we do."]
+    "examples": [
+      "Five nights.",
+      "Sure, here you go.",
+      "We're from Japan.",
+      "Yes, we do."
+    ],
+    "grammar": "答えは聞かれた形で返す: Do you 〜? には do、Are you 〜? には are で受ける。疑問文の助動詞をそのまま鏡のように返すのが英語の応答ルール"
   },
   "could-i-get": {
     "title": "Could I get 〜?",
     "desc": "依頼の万能形。物・サービスを丁寧にもらう。get の代わりに have でも同じ。末尾に please を付ければ十分丁寧。",
-    "examples": ["Could I get some water, please?", "Excuse me, could I get through?"]
+    "examples": [
+      "Could I get some water, please?",
+      "Excuse me, could I get through?"
+    ],
+    "grammar": "could は can の過去形。過去形にすると現実から距離が置かれ、控えめ＝丁寧になる。英語の丁寧さは「時制の距離」で作る"
   },
   "could-you": {
     "title": "Could you 〜?",
     "desc": "相手に動いてもらう依頼の万能形。命令形（Wait here）より常に丁寧で、頼み事はほぼ全部この形で通せる。",
-    "examples": ["Could you wait here for about ten minutes?", "Could you take a photo of us?"]
+    "examples": [
+      "Could you wait here for about ten minutes?",
+      "Could you take a photo of us?"
+    ],
+    "grammar": "Can you より Could you が丁寧なのも同じ原理。過去形が心理的距離＝敬意を作る。仮定法の名残"
   },
   "id-like-to": {
     "title": "I'd like to 〜",
     "desc": "丁寧な意思表明。I want to より柔らかく、予約・手配・要望を切り出す時の大人の定番。",
-    "examples": ["I'd like to book a massage for two.", "I'd like to change yen into rupiah."]
+    "examples": [
+      "I'd like to book a massage for two.",
+      "I'd like to change yen into rupiah."
+    ],
+    "grammar": "I'd = I would。仮定の would を挟むことで「もし可能なら」という控えめさが出る。I want の直接さを仮定法が和らげる"
   },
   "is-it-possible": {
     "title": "Is it possible to 〜?",
     "desc": "無理めなお願いの打診。ダメ元の交渉はこれ。「可能かどうか」を聞く形なので断られても角が立たない。",
-    "examples": ["Is it possible to check in early?", "Is it possible to have a late checkout?"]
+    "examples": [
+      "Is it possible to check in early?",
+      "Is it possible to have a late checkout?"
+    ],
+    "grammar": "主語を it（状況）にして人を主語にしない構文。相手に「あなたがやれ」と迫らず、可能性そのものを問うから圧が消える"
   },
   "reservation-under": {
     "title": "〜 under + 名字",
     "desc": "予約・手配を名前で提示する形。under Tanaka で「タナカ名義」。ホテル・レストラン・送迎、予約の提示は全部この形。",
-    "examples": ["We have a reservation under Tanaka.", "We have a pickup arranged under Tanaka."]
+    "examples": [
+      "We have a reservation under Tanaka.",
+      "We have a pickup arranged under Tanaka."
+    ],
+    "grammar": "under は「〜の名の下に」。前置詞1つで名義・所属を表す英語らしい圧縮表現。動詞を変えずに under だけ付け足せばいい"
   },
   "past-request": {
     "title": "We requested 〜",
     "desc": "過去形で「事前に頼んであった」と事実を提示する形。記録ベースの言い方なので要求がましくならない。",
-    "examples": ["We requested a room with two queen beds."]
+    "examples": [
+      "We requested a room with two queen beds."
+    ],
+    "grammar": "過去形 requested は「過去の事実の報告」。現在の要求ではなく記録の確認という体裁になるから、角が立たない"
   },
   "would-it-be-okay": {
     "title": "Would it be okay if 〜?",
     "desc": "許可取りは Could we 〜? が最短で十分丁寧。より丁寧なフル形が Would it be okay if 〜?（if 節は過去形）。",
-    "examples": ["Could we leave our luggage here?", "Could we check in early?", "Would it be okay if we left our luggage here?"]
+    "examples": [
+      "Could we leave our luggage here?",
+      "Could we check in early?",
+      "Would it be okay if we left our luggage here?"
+    ],
+    "grammar": "if 節が過去形（left）なのは仮定法過去。「仮の話ですが」と一歩引くことで最上級の丁寧さになる。Could we 〜? はその軽量版"
   },
   "do-you-have": {
     "title": "Do you have 〜?",
     "desc": "有無の確認。空き・在庫・メニュー、何でもまず have で聞ける。Do you take 〜?（受け付けてる?）も同じ仲間。",
-    "examples": ["Do you have a table for two?", "Do you take credit cards?"]
+    "examples": [
+      "Do you have a table for two?",
+      "Do you take credit cards?"
+    ],
+    "grammar": "have は所有だけでなく「提供できる物がある」の意味。席・空き・在庫の存在確認は have で聞くのが英語の発想"
   },
   "where-can-i": {
     "title": "Where can I 〜?",
     "desc": "場所・手段を聞く形。find / pay / buy を入れ替えて応用。探し物なら I'm looking for 〜 も同じ発想。",
-    "examples": ["Where can I pay the tourist levy?", "I'm looking for the driver from The Ritz-Carlton."]
+    "examples": [
+      "Where can I pay the tourist levy?",
+      "I'm looking for the driver from The Ritz-Carlton."
+    ],
+    "grammar": "can I で「自分に可能か」を聞く形。Where is 〜? が場所だけなのに対し、「どうすればできるか」の手段まで含む"
   },
   "there-seems": {
     "title": "I think there's 〜 / I think I 〜",
     "desc": "問題の丁寧な指摘。You made a mistake と人を責めず、I think でクッションを入れて問題そのものを主語にする。",
-    "examples": ["I think there's a mistake in the bill.", "I think I left my phone in the taxi."]
+    "examples": [
+      "I think there's a mistake in the bill.",
+      "I think I left my phone in the taxi."
+    ],
+    "grammar": "I think + there is 構文。問題を主語にして人を主語にしない＝非難を避ける英語の定石。think がさらにクッションになる"
   },
   "already-done": {
     "title": "I've already 〜",
     "desc": "完了済みの提示。「もう済ませてあります」を一言で。入国手続き・支払い済みの主張に強い。",
-    "examples": ["I've already applied for the e-VOA.", "I've already paid it online."]
+    "examples": [
+      "I've already applied for the e-VOA.",
+      "I've already paid it online."
+    ],
+    "grammar": "現在完了 have + 過去分詞は「過去の行為が今も有効」。申請した＆今も有効、を1つの時制で伝える。過去形 applied だと「昔やった」だけ"
   },
   "wh-question": {
     "title": "How much / How long / What time 〜?",
     "desc": "疑問詞の定型3兄弟。値段は How much is 〜?、所要時間は How long to 〜?（does it take は省略可）、時刻は What time should we 〜?",
-    "examples": ["How much is this?", "How long to the hotel?", "What time should we be in the lobby?"]
+    "examples": [
+      "How much is this?",
+      "How long to the hotel?",
+      "What time should we be in the lobby?"
+    ],
+    "grammar": "疑問詞のあとは省略が標準: How long (does it take) to 〜? のカッコ内は文脈が補う。疑問詞だけ強く言えば成立する"
   }
 }
