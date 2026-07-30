@@ -401,7 +401,7 @@
     "structure": "What time should we + 動詞 — 集合・出発時刻の確認。should で「〜すればいい?」",
     "nuance": "答えを聞いたら Seven, right? と復唱すると聞き間違いを防げる",
     "pattern": "wh-question",
-    "prio": "A",
+    "prio": "C",
     "kana": "ワッタイム しゅどぅい ビー いん ざ ロビー？"
   },
   {
@@ -412,7 +412,7 @@
     "structure": "Could we take a break — 自分たちの行動の許可取り。short を付けて「少しだけ」",
     "nuance": "ペースが速いなら Could we slow down a bit? も同じ形で使える",
     "pattern": "would-it-be-okay",
-    "prio": "A",
+    "prio": "C",
     "kana": "くどぅい テイク あ ショート ブレイク？"
   },
   {
