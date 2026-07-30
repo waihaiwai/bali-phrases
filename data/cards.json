@@ -37,6 +37,17 @@
     "kana": "エクスキューズミー、くだい ゲッ スルー？"
   },
   {
+    "id": "flight-04",
+    "scene": "flight",
+    "ja": "（聞き取れなかった）え、もう一度いいですか？",
+    "best": "Sorry?",
+    "structure": "Sorry?（語尾を上げる）— 聞き返しの最短形。全シーン共通の保険。聞き返しは失礼ではない、ネイティブも多用する",
+    "nuance": "ゆっくり言い直してほしいなら Could you say that again? 全文聞き取れなくてもこれさえ出れば会話は破綻しない",
+    "pattern": "short-response",
+    "prio": "S",
+    "kana": "ソーリー？（ごび を あげる）"
+  },
+  {
     "id": "sin-01",
     "scene": "sin-transit",
     "ja": "（T1到着、T3へ移動）ターミナル3行きのスカイトレインはどこですか",
