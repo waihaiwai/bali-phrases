@@ -1,4 +1,4 @@
-const CACHE = "bali-phrases-v16";
+const CACHE = "bali-phrases-v17";
 const ASSETS = [
   "./",
   "./index.html",
