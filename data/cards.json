@@ -324,6 +324,32 @@
     "kana": "ざ ビル、プリーズ"
   },
   {
+    "id": "rest-08",
+    "scene": "restaurant",
+    "ja": "（少食なので）1つを2人でシェアしたいです",
+    "best": "One to share, please.",
+    "structure": "数 + to share + please — シェア注文の最短形。バリは量が多いので夫婦2人の実戦フレーズ",
+    "nuance": "足りるか不安なら Is one enough for two?（2人で1つで足ります?）と先に聞くのもあり",
+    "pattern": "noun-please",
+    "prio": "A",
+    "kana": "ワン とぅ シェア、プリーズ"
+  },
+  {
+    "id": "rest-09",
+    "scene": "restaurant",
+    "cue": {
+      "en": "Would you like some dessert? Our specials are very popular.",
+      "ja": "デザートはいかがですか？名物ですよ"
+    },
+    "ja": "（勧められて断る理由に）私たち、少食なんです",
+    "best": "We don't eat much.",
+    "structure": "We don't eat much — 少食の定番表現。No, thank you. に理由を添えると感じ良く断れる",
+    "nuance": "お腹いっぱいなら We're full, thank you. スタッフの勧めを角なく断る保険フレーズ",
+    "pattern": "short-response",
+    "prio": "B",
+    "kana": "うぃ ドウント イート マッチ"
+  },
+  {
     "id": "grab-01",
     "scene": "grab",
     "ja": "（配車確認）タロウの配車で来たドライバーさんですか",
