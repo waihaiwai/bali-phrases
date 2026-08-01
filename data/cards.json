@@ -350,6 +350,36 @@
     "kana": "うぃ ドウント イート マッチ"
   },
   {
+    "id": "rest-10",
+    "scene": "restaurant",
+    "cue": {
+      "en": "You should try our special fish today!",
+      "ja": "本日の特別料理の魚、ぜひどうぞ！"
+    },
+    "ja": "（勧められて保留）また後でにします",
+    "best": "Maybe later.",
+    "structure": "Maybe later — 勧められた物の保留の最短形。断り切らずに引いてもらえる。黙るより一言これ",
+    "nuance": "英語圏では「考え中」も言葉にするのが普通。沈黙より Maybe later. / Let me think. で間を持たせる",
+    "pattern": "short-response",
+    "prio": "A",
+    "kana": "メイビ レイラー"
+  },
+  {
+    "id": "rest-11",
+    "scene": "restaurant",
+    "cue": {
+      "en": "Are you ready to order?",
+      "ja": "ご注文はお決まりですか？"
+    },
+    "ja": "（まだ決まってない）少し時間をもらえますか",
+    "best": "Can we have a minute?",
+    "structure": "Can we have a minute? — 「少し待って」の定番。a minute は文字どおり1分ではなく「少しの時間」",
+    "nuance": "A few minutes, please. でも同じ。決まったら手を挙げて Excuse me! で呼び戻す",
+    "pattern": "short-response",
+    "prio": "A",
+    "kana": "きゃん うぃ はゔ あ ミニッ？"
+  },
+  {
     "id": "grab-01",
     "scene": "grab",
     "ja": "（配車確認）タロウの配車で来たドライバーさんですか",
